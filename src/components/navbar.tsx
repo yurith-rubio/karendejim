@@ -46,6 +46,7 @@ function NavItem({ children, href }: NavItemProps) {
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
+        placeholder={undefined}
       >
         {children}
       </Typography>
@@ -66,9 +67,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50" placeholder={undefined}>
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
+        <Typography color="blue-gray" className="text-lg font-bold" placeholder={undefined}>
           Material Tailwind
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
@@ -80,9 +81,9 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Sign In</Button>
+          <Button variant="text" placeholder={undefined}>Sign In</Button>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
+            <Button color="gray" placeholder={undefined}>blocks</Button>
           </a>
         </div>
         <IconButton
@@ -90,6 +91,7 @@ export function Navbar() {
           color="gray"
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
+          placeholder={undefined}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -109,9 +111,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Sign In</Button>
+            <Button variant="text" placeholder={undefined}>Sign In</Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
+              <Button color="gray" placeholder={undefined}>blocks</Button>
             </a>
           </div>
         </div>
