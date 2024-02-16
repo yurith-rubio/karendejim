@@ -13,8 +13,8 @@ const CLIENTS = [
     alt: "spotify",
   },
   {
-    img: "pinterest.svg",
-    alt: "pinterest",
+    img: "logo-MarroqueriaMarioHernandez.jpg",
+    alt: "https://www.mariohernandez.com.co/",
   },
   {
     img: "anhalt-hochschule.svg",
@@ -25,7 +25,7 @@ const CLIENTS = [
     alt: "https://www.itonics-innovation.de/",
   },
   {
-    img: "netflix.svg",
+    img: "StyleandImageStudio.svg",
     alt: "netflix",
   },
 ];

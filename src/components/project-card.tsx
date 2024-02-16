@@ -18,17 +18,53 @@ interface ProjectCardProps {
   desc: string;
 }
 
-const IMAGES = {
-  "Surrealistic Collage Art": "/image/cover-Surrealistic.jpg",
-  "Insurance Trend Report": "/image/cover-Insurance.jpg",
-  "Sustainability Trend Report": "/image/cover-Maid.jpg",
-  "Social Media": "/image/blog4.svg",
-  "Design Posters": "/image/blog-1.svg",
-  "Set of Illustrations for ITONICS": "/image/blog2.svg",
-  "Presentation - Brochure Design": "/image/blog3.svg",
-  "Catalogue Design": "/image/blog4.svg",
-  "9° Design Price MARION HERNANDEZ": "/image/blog4.svg",
-  "Traveling guide 'Viajes con estilo'": "/image/blog4.svg",
+const IMAGES: any = {
+  "Surrealistic Collage Art": [
+    "/project-images/Surrealistic-1.jpg",
+    "/project-images/Surrealistic-2.jpg",
+    "/project-images/Surrealistic-3.jpg",
+    "/project-images/Surrealistic-4.jpg",
+    "/project-images/Surrealistic-5.jpg",
+    "/project-images/Surrealistic-6.jpg",
+    "/project-images/Surrealistic-7.jpg",
+    "/project-images/Surrealistic-8.jpg",
+    "/project-images/Surrealistic-9.jpg",
+    "/project-images/Surrealistic-10.jpg",
+    "/project-images/Surrealistic-11.jpg",
+    "/project-images/Surrealistic-12.jpg",
+    "/project-images/Surrealistic-13.jpg",
+    "/project-images/Surrealistic-14.jpg",
+    "/project-images/Surrealistic-15.jpg",
+    "/project-images/Surrealistic-16.jpg",
+    "/project-images/Surrealistic-17.jpg",
+    "/project-images/Surrealistic-18.jpg",
+    "/project-images/Surrealistic-19.jpg",
+    "/project-images/Surrealistic-20.jpg",
+    "/project-images/Surrealistic-21.jpg",
+    "/project-images/Surrealistic-22.jpg",
+    "/project-images/Surrealistic-23.jpg",
+    "/project-images/Surrealistic-24.jpg",
+    "/project-images/Surrealistic-25.jpg",
+    "/project-images/Surrealistic-26.jpg",
+    "/project-images/Surrealistic-27.jpg",
+    "/project-images/Surrealistic-28.jpg",
+    "/project-images/Surrealistic-29.jpg",
+    "/project-images/Surrealistic-30.jpg",
+    "/project-images/Surrealistic-31.jpg",
+    "/project-images/Surrealistic-32.jpg",
+    "/project-images/Surrealistic-33.jpg",
+    "/project-images/Surrealistic-34.jpg",
+    "/project-images/Surrealistic-35.jpg",
+    "/project-images/Surrealistic-36.jpg",
+  ],
+  "9° Design Price MARION HERNANDEZ": [
+    "/project-images/Premio-1.png",
+    "/project-images/Premio-2.jpg",
+    "/project-images/Premio-3.jpg",
+    "/project-images/Premio-4.jpg",
+    "/project-images/Premio-5.jpg",
+  ],
+
 };
 
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {
@@ -43,7 +79,8 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           alt={title}
           width={768}
           height={768}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover pointer"
+          onClick={handleOpen}
         />
       </CardHeader>
       <CardBody className="p-0" placeholder={undefined} >
@@ -66,27 +103,49 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         </Button>
       </CardBody>
       
-      <Dialog open={open} handler={handleOpen} placeholder={undefined} >
-          <DialogHeader placeholder={undefined} >Its a simple dialog.</DialogHeader>
-          <DialogBody placeholder={undefined} >
+      <Dialog open={open} handler={handleOpen} placeholder={undefined} size="xxl">
+        <DialogHeader placeholder={undefined} className="bg-gray-50 flex w-full fixed top-0 z-10">
+          <Button variant="gradient" color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
+                <span>Close</span>
+          </Button>
+        </DialogHeader>
+        <DialogBody placeholder={undefined} className="bg-gray-50 grid gap-9 p-8">
+          <Typography variant="h2" color="deep-purple" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" placeholder={undefined} >
             The key to more success is to have a lot of pillows. Put it this way,
             it took me twenty five years to get these plants, twenty five years of
             blood sweat and tears, and I&apos;m never giving up, I&apos;m just
             getting started. I&apos;m up to something. Fan luv.
+          </Typography>
+          
+          
+          {IMAGES[title] ?
+            IMAGES[title].map((url: string, key: number) => (
+              <Image
+                key={key}
+                src={url}
+                alt={title}
+                width={768}
+                height={768}
+                className="object-cover rounded-xl mr-auto ml-auto"
+              />
+            ))
+            : 
             <Image
-            src={img}
-            alt={title}
-            width={768}
-            height={768}
-            className="h-full w-full object-cover"
-          />
+                src={img}
+                alt={title}
+                width={768}
+                height={768}
+                className="object-cover rounded-xl mr-auto ml-auto"
+            />
+          }
           </DialogBody>
-          <DialogFooter placeholder={undefined} >
-            <Button variant="gradient" color="deep-purple" onClick={handleOpen} placeholder={undefined} >
-              <span>Confirm</span>
+          <DialogFooter placeholder={undefined} className="bg-gray-50" >
+            <Button variant="gradient" color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
+              <span>Close</span>
             </Button>
           </DialogFooter>
         </Dialog>
+      
     </Card>
 
   );
