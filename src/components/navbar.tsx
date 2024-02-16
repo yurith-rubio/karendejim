@@ -59,7 +59,7 @@ export function Navbar() {
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50" placeholder={undefined} >
       <div className="container mx-auto flex items-center justify-between">
         <Typography color="blue-gray" className="text-lg font-bold" placeholder={undefined} >
-          Material Tailwind
+          Karen Delgado
         </Typography>
         
         <div className="hidden items-center gap-2 lg:flex">

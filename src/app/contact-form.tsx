@@ -74,70 +74,7 @@ export function ContactForm() {
                 </IconButton>
               </div>
             </div>
-            <div className="w-full mt-8 md:mt-0 md:px-10 col-span-4 h-full p-5">
-              <form action="#">
-                <div className="mb-8 grid gap-4 lg:grid-cols-2">
-                  {/* @ts-ignore */}
-                  <Input
-                    color="gray"
-                    size="lg"
-                    variant="static"
-                    label="First Name"
-                    name="first-name"
-                    placeholder="eg. Lucas"
-                    containerProps={{
-                      className: "!min-w-full mb-3 md:mb-0",
-                    }}
-                  />
-                  {/* @ts-ignore */}
-                  <Input
-                    color="gray"
-                    size="lg"
-                    variant="static"
-                    label="Last Name"
-                    name="last-name"
-                    placeholder="eg. Jones"
-                    containerProps={{
-                      className: "!min-w-full",
-                    }}
-                  />
-                </div>
-                {/* @ts-ignore */}
-                <Input
-                  color="gray"
-                  size="lg"
-                  variant="static"
-                  label="Email"
-                  name="first-name"
-                  placeholder="eg. lucas@mail.com"
-                  containerProps={{
-                    className: "!min-w-full mb-8",
-                  }}
-                />
-                <Typography
-                  variant="lead"
-                  className="!text-blue-gray-500 text-sm mb-2"
-                  placeholder={undefined} 
-                >
-                  What are you interested on?
-                </Typography>
-                <Textarea
-                  color="gray"
-                  size="lg"
-                  variant="static"
-                  label="Your Message"
-                  name="first-name"
-                  containerProps={{
-                    className: "!min-w-full mb-8",
-                  }}
-                />
-                <div className="w-full flex justify-end">
-                  <Button className="w-full md:w-fit" color="gray" size="md" placeholder={undefined} >
-                    Send message
-                  </Button>
-                </div>
-              </form>
-            </div>
+            
           </CardBody>
         </Card>
       </div>

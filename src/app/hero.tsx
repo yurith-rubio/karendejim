@@ -24,10 +24,12 @@ function Hero() {
             I love to use the power of design to make an idea talk by itself.
           </Typography>
           <div className="grid">
-            {/* @ts-ignore */}
-            <Button color="purple" className="w-full px-4 md:w-[12rem]">
-              Hire me
-            </Button>
+            <a href="#projects">
+              {/* @ts-ignore */}
+              <Button color="purple" className="w-full px-4 md:w-[12rem]">
+                See projects
+              </Button>
+            </a>
           </div>
           {/* @ts-ignore */}
         </div>
