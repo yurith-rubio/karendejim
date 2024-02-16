@@ -5,17 +5,17 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/blog-1.svg",
-    title: "Mobile App Development",
+    img: "/image/cover-Insurance-Trend-Report.jpg",
+    title: "Insurance Trend Report",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
   {
-    img: "/image/blog2.svg",
+    img: "/image/cover-Social-Media.jpg",
     title: "Landing Page Development",
     desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
   },
   {
-    img: "/image/blog3.svg",
+    img: "/image/cover-Maid.jpg",
     title: "Mobile App Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
@@ -48,19 +48,10 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section className="py-28 px-8">
+    <section className="py-28 px-8" id="projects">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4" placeholder={undefined}>
+        <Typography variant="h2" color="deep-purple" className="mb-4" placeholder={undefined} >
           My Projects
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
-          placeholder={undefined}
-        >
-          Whether you have a mobile app idea that needs to come to life or a
-          website that requires a facelift, I&apos;m here to turn your digital
-          dreams into reality.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">

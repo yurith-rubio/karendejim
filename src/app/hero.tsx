@@ -14,45 +14,28 @@ function Hero() {
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
             placeholder={undefined}
           >
-            Karen de Jim
+            Karen <span style={{fontWeight: 100}}>Delgado</span>
           </Typography>
+          {/* @ts-ignore */}
           <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
-            placeholder={undefined}
           >
-            I&apos;m Lily Smith, a passionate web developer based in USA. Here,
-            you&apos;ll get a glimpse of my journey in the world of web
-            development, where creativity meets functionality.
+            I love to use the power of design to make an idea talk by itself.
           </Typography>
           <div className="grid">
-            <Typography
-              variant="small"
-              className="mb-2 text-gray-900 font-medium"
-              placeholder={undefined}
-            >
-              Your email
-            </Typography>
-            <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
-              {/* @ts-ignore */}
-              <Input color="gray" label="Enter your email" size="lg" />
-              <Button color="gray" className="w-full px-4 md:w-[12rem]" placeholder={undefined}>
-                require offer
-              </Button>
-            </div>
+            {/* @ts-ignore */}
+            <Button color="purple" className="w-full px-4 md:w-[12rem]">
+              Hire me
+            </Button>
           </div>
-          <Typography variant="small" className="font-normal !text-gray-500" placeholder={undefined}>
-            Read my{" "}
-            <a href="#" className="font-medium underline transition-colors">
-              Terms and Conditions
-            </a>
-          </Typography>
+          {/* @ts-ignore */}
         </div>
         <Image
           width={1024}
           height={1024}
           alt="team work"
-          src="/image/image-7.svg"
+          src="/image/karen-delgado-picture.jpg"
           className="h-[36rem] w-full rounded-xl object-cover"
         />
       </div>
