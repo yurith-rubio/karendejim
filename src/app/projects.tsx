@@ -5,43 +5,53 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/cover-Insurance-Trend-Report.jpg",
-    title: "Insurance Trend Report",
+    img: "/image/cover-Surrealistic.jpg",
+    title: "Surrealistic Collage Art",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
   {
-    img: "/image/cover-Social-Media.jpg",
-    title: "Landing Page Development",
+    img: "/image/cover-Insurance.jpg",
+    title: "Insurance Trend Report",
     desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
   },
   {
     img: "/image/cover-Maid.jpg",
-    title: "Mobile App Development",
+    title: "Sustainability Trend Report",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
   {
     img: "/image/blog4.svg",
-    title: "E-commerce development",
+    title: "Social Media",
     desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
   },
   {
     img: "/image/blog-1.svg",
-    title: "Mobile App Development",
+    title: "Design Posters",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
   {
     img: "/image/blog2.svg",
-    title: "Landing Page Development",
+    title: "Set of Illustrations for ITONICS",
     desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
   },
   {
     img: "/image/blog3.svg",
-    title: "Mobile App Development",
+    title: "Presentation - Brochure Design",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
   {
     img: "/image/blog4.svg",
-    title: "E-commerce development",
+    title: "Catalogue Design",
+    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
+  },
+  {
+    img: "/image/blog4.svg",
+    title: "9° Design Price MARION HERNANDEZ",
+    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
+  },
+  {
+    img: "/image/blog4.svg",
+    title: "Traveling guide 'Viajes con estilo'",
     desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
   },
 ];

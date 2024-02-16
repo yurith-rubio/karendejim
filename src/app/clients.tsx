@@ -34,8 +34,11 @@ export function Clients() {
   return (
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
-        <Typography variant="h6" color="blue-gray" className="mb-8" placeholder={undefined} >
-          My awesome clients
+        {/* <Typography variant="h6" color="deep-purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
+          Clients and companies I have worked with
+        </Typography> */}
+        <Typography variant="h2" color="purple" className="mb-2 font-bold uppercase text-1xl" placeholder={undefined}>
+          Trusted by
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (

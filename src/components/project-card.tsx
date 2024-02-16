@@ -10,12 +10,26 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
+import Image from "next/image";
 
 interface ProjectCardProps {
   img: string;
   title: string;
   desc: string;
 }
+
+const IMAGES = {
+  "Surrealistic Collage Art": "/image/cover-Surrealistic.jpg",
+  "Insurance Trend Report": "/image/cover-Insurance.jpg",
+  "Sustainability Trend Report": "/image/cover-Maid.jpg",
+  "Social Media": "/image/blog4.svg",
+  "Design Posters": "/image/blog-1.svg",
+  "Set of Illustrations for ITONICS": "/image/blog2.svg",
+  "Presentation - Brochure Design": "/image/blog3.svg",
+  "Catalogue Design": "/image/blog4.svg",
+  "9° Design Price MARION HERNANDEZ": "/image/blog4.svg",
+  "Traveling guide 'Viajes con estilo'": "/image/blog4.svg",
+};
 
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {
   const [open, setOpen] = useState(false);
@@ -59,7 +73,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
             it took me twenty five years to get these plants, twenty five years of
             blood sweat and tears, and I&apos;m never giving up, I&apos;m just
             getting started. I&apos;m up to something. Fan luv.
-            <img
+            <Image
             src={img}
             alt={title}
             width={768}
