@@ -84,6 +84,22 @@ const IMAGES: any = {
     "/project-images/Sustainability-10.jpg",
     "/project-images/Sustainability-11.jpg",
   ],
+  "Social Media": [
+    "/project-images/Social-1.png",
+    "/project-images/Social-2.png",
+    "/project-images/Social-3.png",
+    "/project-images/Social-4.png",
+    "/project-images/Social-5.png",
+    "/project-images/Social-6.png",
+    "/project-images/Social-7.png",
+    "/project-images/Social-8.jpg",
+    "/project-images/Social-9.jpg",
+    "/project-images/Social-10.jpg",
+    "/project-images/Social-11.jpg",
+    "/project-images/Social-12.png",
+    "/project-images/Social-13.png",
+    "/project-images/Social-14.png",
+  ],
   "9° Design Price MARION HERNANDEZ": [
     "/project-images/Premio-1.png",
     "/project-images/Premio-2.jpg",
@@ -91,7 +107,6 @@ const IMAGES: any = {
     "/project-images/Premio-4.jpg",
     "/project-images/Premio-5.jpg",
   ],
-
 };
 
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {

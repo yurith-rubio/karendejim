@@ -25,7 +25,7 @@ export function Resume() {
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
           <Typography variant="h2" color="deep-purple" placeholder={undefined} >
-            My Resume
+            Education
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500" placeholder={undefined} >
             Highly skilled and creative Web Developer with 5+ years of

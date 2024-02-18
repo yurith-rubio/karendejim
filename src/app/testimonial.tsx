@@ -31,7 +31,7 @@ export function Testimonial() {
                 className="mb-4 font-bold lg:max-w-xs"
                 placeholder={undefined} 
               >
-                Mobile App Development
+                What people has to say about me
               </Typography>
               <Typography className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500" placeholder={undefined} >
                 I had the pleasure of working with Lily on a critical web
@@ -39,14 +39,18 @@ export function Testimonial() {
                 expertise and professionalism exceeded my expectations.
               </Typography>
               <Typography variant="h4" color="blue-gray" className="mb-0.5" placeholder={undefined} >
-                  Markus Gattenlöhner
+                {active === 1 && "Markus Gattenlöhner"}
+                {active === 2 && "Marison"}
+                {active === 3 && "Christoph"}
               </Typography>
               <Typography
                 variant="small"
                 className="font-normal mb-5 !text-gray-500"
                 placeholder={undefined} 
               >
-                Marketing @ ITONICS
+                {active === 1 && "Marketing @ ITONICS"}
+                {active === 2 && "Marison"}
+                {active === 3 && "Christoph"}
               </Typography>
               <div className="flex items-center gap-4">
                 <Avatar
