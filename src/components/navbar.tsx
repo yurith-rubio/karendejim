@@ -73,7 +73,7 @@ export function Navbar() {
             ))}
           </ul>
           {/* <Button variant="text">Sign In</Button> */}
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
+          <a href="https://yurithrubio.myshopify.com/account/register" target="_blank">
             <Button color="purple" placeholder={undefined} >Hire me</Button>
           </a>
         </div>
