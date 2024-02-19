@@ -16,7 +16,8 @@ const NAV_MENU = [
   {
     name: "Resume",
     icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    // href: "https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1",
+    href: "https://yurithrubio.myshopify.com/account/register"
   },
 ];
 

@@ -187,7 +187,6 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
             </Button>
           </DialogFooter>
         </Dialog>
-      
     </Card>
 
   );

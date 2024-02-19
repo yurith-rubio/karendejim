@@ -33,25 +33,42 @@ export function Testimonial() {
               >
                 What people has to say about me
               </Typography>
-              <Typography className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500" placeholder={undefined} >
-                I had the pleasure of working with Lily on a critical web
-                development project, and I can confidently say that their
-                expertise and professionalism exceeded my expectations.
-              </Typography>
-              <Typography variant="h4" color="blue-gray" className="mb-0.5" placeholder={undefined} >
-                {active === 1 && "Markus Gattenlöhner"}
-                {active === 2 && "Marison"}
-                {active === 3 && "Christoph"}
-              </Typography>
-              <Typography
-                variant="small"
-                className="font-normal mb-5 !text-gray-500"
-                placeholder={undefined} 
-              >
-                {active === 1 && "Marketing @ ITONICS"}
-                {active === 2 && "Marison"}
-                {active === 3 && "Christoph"}
-              </Typography>
+              {active === 1 && 
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                    Markus Gattenlöhner
+                    <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                      Creative Director, ITONICS GmbH
+                      <br />
+                      +27 66 551 0997
+                      <br />
+                      markus.gattenloehner@itonics.de
+                    </Typography>
+                </Typography>
+              }
+              {active === 2 &&
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                  Marison Gómez
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                    Image and style Consultant
+                    <br />
+                    +1 (786) 308-7845
+                    <br />
+                    info@styleandimagestudio.com
+                  </Typography>
+                </Typography>
+              }
+              {active === 3 &&
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                  Christoph Augustin
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                    Tax consultant
+                    <br />
+                    +49 172 4361973
+                    <br />
+                    christoph_augustin@t-online.de
+                  </Typography>
+                </Typography>
+              }
               <div className="flex items-center gap-4">
                 <Avatar
                   variant="rounded"
