@@ -9,3 +9,5 @@ You can have a look at the website [here](https://karendejim.netlify.app/)
 - Typescript
 - Tailwind
 - Netlify
+- Vite
+- Git / Github
