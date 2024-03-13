@@ -30,9 +30,9 @@ export function ContactForm() {
       </div>
       <div>
         <Card shadow={true} className="container mx-auto border border-gray/50" placeholder={undefined} >
-          <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10" placeholder={undefined} >
-            <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
-              <Typography variant="h3" color="white" className="mb-2" placeholder={undefined} >
+          <CardBody className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 text-center" placeholder={undefined} >
+            {/* <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900"> */}
+              <Typography variant="h3" color="blue-gray" className="mb-2" placeholder={undefined} >
                 Contact Information
               </Typography>
               {/* <Typography
@@ -42,38 +42,38 @@ export function ContactForm() {
                 Fill up the form and our Team will get back to you within 24
                 hours.
               </Typography> */}
-              <div className="flex gap-5">
-                <PhoneIcon className="h-6 w-6 text-white" />
-                <Typography variant="h4" color="white" className="mb-2" placeholder={undefined} >
+              <div className="flex gap-5 justify-center">
+                <PhoneIcon className="h-6 w-6 text-blue-gray" />
+                <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={undefined} >
                   +1(49) 160 6013 255
                 </Typography>
               </div>
-              <div className="flex my-2 gap-5">
-                <EnvelopeIcon className="h-6 w-6 text-white" />
-                <Typography variant="h4" color="white" className="mb-2" placeholder={undefined} >
+              <div className="flex my-2 gap-5 justify-center">
+                <EnvelopeIcon className="h-6 w-6 text-blue-gray" />
+                <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={undefined} >
                   karendejim@gmail.com
                 </Typography>
               </div>
-              <div className="flex mb-10 gap-5">
-                <TicketIcon className="h-6 w-6 text-white" />
-                <Typography variant="h6" color="white" className="mb-2" placeholder={undefined} >
+              <div className="flex mb-10 gap-5 justify-center">
+                <TicketIcon className="h-6 w-6 text-blue-gray" />
+                <Typography variant="h6" color="blue-gray" className="mb-2" placeholder={undefined} >
                   <a href="https://www.linkedin.com/in/karen-delgado-513852133">
                     Linkedin
                   </a>
                 </Typography>
               </div>
               <div className="flex items-center gap-5">
-                <IconButton variant="text" color="white" placeholder={undefined} >
+                <IconButton variant="text" color="blue-gray" placeholder={undefined} >
                   <i className="fa-brands fa-facebook text-lg" />
                 </IconButton>
-                <IconButton variant="text" color="white" placeholder={undefined} >
+                <IconButton variant="text" color="blue-gray" placeholder={undefined} >
                   <i className="fa-brands fa-instagram text-lg" />
                 </IconButton>
-                <IconButton variant="text" color="white" placeholder={undefined} >
+                <IconButton variant="text" color="blue-gray" placeholder={undefined} >
                   <i className="fa-brands fa-github text-lg" />
                 </IconButton>
               </div>
-            </div>
+            {/* </div> */}
             
           </CardBody>
         </Card>
