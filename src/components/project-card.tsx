@@ -211,7 +211,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           
           {IMAGES[title] ?
             IMAGES[title].map((url: string, key: number) => (
-              <a href={url} target="_blank" >
+              <a href={url} target="_blank" key={key} >
               <Image
                 key={key}
                 src={url}
