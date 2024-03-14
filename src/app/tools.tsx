@@ -50,11 +50,11 @@ const SKILLS = [
   },
 ];
 
-export function Skills() {
+export function Tools() {
   return (
     <section className="px-8" id="tools">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
+        <Typography color="deep-purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
           Tools
         </Typography>
         <Typography variant="h1" color="deep-purple" className="mb-4" placeholder={undefined} >
@@ -70,4 +70,4 @@ export function Skills() {
   );
 }
 
-export default Skills;
+export default Tools;

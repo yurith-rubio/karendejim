@@ -5,15 +5,7 @@ import { Typography } from "@material-tailwind/react";
 
 const CLIENTS = [
   {
-    img: "coinbase.svg",
-    alt: "coinbase",
-  },
-  {
-    img: "spotify.svg",
-    alt: "spotify",
-  },
-  {
-    img: "logo-MarroqueriaMarioHernandez.jpg",
+    img: "MarroqueriaMarioHernandez.jpg",
     alt: "https://www.mariohernandez.com.co/",
   },
   {
@@ -26,7 +18,7 @@ const CLIENTS = [
   },
   {
     img: "StyleandImageStudio.svg",
-    alt: "netflix",
+    alt: "https://styleandimagestudio.com/",
   },
 ];
 
@@ -37,7 +29,7 @@ export function Clients() {
         {/* <Typography variant="h6" color="deep-purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
           Clients and companies I have worked with
         </Typography> */}
-        <Typography variant="h2" color="purple" className="mb-2 font-bold uppercase text-1xl" placeholder={undefined}>
+        <Typography variant="h2" color="deep-purple" className="mb-2 font-bold uppercase text-1xl" placeholder={undefined}>
           Trusted by
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">

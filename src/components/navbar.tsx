@@ -16,8 +16,7 @@ const NAV_MENU = [
   {
     name: "Resume",
     icon: CommandLineIcon,
-    // href: "https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1",
-    href: "https://yurithrubio.myshopify.com/account/register"
+    href: "https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1"
   },
 ];
 
@@ -67,16 +66,16 @@ export function Navbar() {
           <ul className="ml-10 hidden items-center gap-8 lg:flex">
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
               <NavItem key={name} href={href}>
-                <Icon className="h-5 w-5" color="purple" />
-                <Typography color="purple" placeholder={undefined} className="font-bold pr-5">
+                <Icon className="h-5 w-5" color="deep-purple" />
+                <Typography color="deep-purple" placeholder={undefined} className="font-bold pr-5">
                   {name}
                 </Typography>
               </NavItem>
             ))}
           </ul>
           {/* <Button variant="text">Sign In</Button> */}
-          <a href="https://yurithrubio.myshopify.com/account/register?from=karen" target="_blank">
-            <Button color="purple" placeholder={undefined} >Hire me</Button>
+          <a href="#contact">
+            <Button color="deep-purple" placeholder={undefined} >Hire me</Button>
           </a>
         </div>
         <IconButton

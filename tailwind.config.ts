@@ -6,7 +6,15 @@ const config: Config = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        'deep-purple': {
+          500: "#611f69",
+        },
+      }
+    }
+  },
   plugins: [],
 });
 

@@ -140,14 +140,14 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         {/* <Button color="deep-purple" size="sm">
           see details
         </Button> */}
-        <Button onClick={handleOpen} variant="gradient" color="purple" placeholder={undefined} >
+        <Button onClick={handleOpen} color="deep-purple" placeholder={undefined} >
           See poject
         </Button>
       </CardBody>
       
       <Dialog open={open} handler={handleOpen} placeholder={undefined} size="xxl">
         <DialogHeader placeholder={undefined} className="bg-gray-50 flex w-full fixed top-0 z-10">
-          <Button variant="gradient" color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
+          <Button color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
                 <span>Close</span>
           </Button>
         </DialogHeader>
@@ -182,7 +182,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           }
           </DialogBody>
           <DialogFooter placeholder={undefined} className="bg-gray-50" >
-            <Button variant="gradient" color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
+            <Button color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
               <span>Close</span>
             </Button>
           </DialogFooter>

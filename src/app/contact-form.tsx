@@ -4,9 +4,6 @@ import {
   Typography,
   Card,
   CardBody,
-  Input,
-  Textarea,
-  Button,
   IconButton,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
@@ -14,7 +11,7 @@ import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
 export function ContactForm() {
   
   return (
-    <section className="px-8 py-16">
+    <section className="px-8 py-16" id="contact">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="deep-purple" className="mb-4 text-4xl" placeholder={undefined} >
           Contact Karen

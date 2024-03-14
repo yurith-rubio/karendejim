@@ -29,7 +29,7 @@ export function Footer() {
                 </Typography>
               </li>
             ))}
-            <Button color="purple" placeholder={undefined} >Hire me</Button>
+            <Button color="deep-purple" placeholder={undefined} >Hire me</Button>
           </ul>
         </div>
       </div>
