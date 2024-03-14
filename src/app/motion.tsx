@@ -1,6 +1,6 @@
 "use client";
 
-import { Carousel } from "@material-tailwind/react";
+// import { Carousel } from "@material-tailwind/react";
 
 export function Motion() {
     return <div></div>

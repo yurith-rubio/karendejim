@@ -8,7 +8,6 @@ import {
   Dialog,
   DialogHeader,
   DialogBody,
-  DialogFooter,
 } from "@material-tailwind/react";
 import Image from "next/image";
 
@@ -175,20 +174,12 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         />
       </CardHeader>
       <CardBody className="p-0" placeholder={undefined} >
-        {/* <a
-          href="#"
-          className="deep-purple hover:purple-500"
-        > */}
           <Typography variant="h5" className="mb-2" color="deep-purple" placeholder={undefined} >
             {title}
           </Typography>
-        {/* </a> */}
         <Typography className="mb-6 font-normal !text-gray-500" placeholder={undefined} >
           {desc}
         </Typography>
-        {/* <Button color="deep-purple" size="sm">
-          see details
-        </Button> */}
         <Button onClick={handleOpen} color="deep-purple" placeholder={undefined} >
           See poject
         </Button>

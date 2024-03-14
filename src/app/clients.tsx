@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
 
 const CLIENTS = [
   {
@@ -26,12 +25,6 @@ export function Clients() {
   return (
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
-        {/* <Typography variant="h6" color="deep-purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
-          Clients and companies I have worked with
-        </Typography> */}
-        {/* <Typography variant="h2" color="deep-purple" className="mb-2 font-bold uppercase text-1xl" placeholder={undefined}>
-          Trusted by
-        </Typography> */}
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
             <a href={logo.alt} key={key}>
