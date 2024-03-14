@@ -10,6 +10,7 @@ import Resume from "./resume";
 import Testimonial from "./testimonial";
 import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
+import Carousel from "./motion";
 
 export default function Portfolio() {
   return (
@@ -18,6 +19,7 @@ export default function Portfolio() {
       <Hero />
       <Clients />
       <Tools />
+      <Carousel />
       <Projects />
       <Resume />
       <Testimonial />

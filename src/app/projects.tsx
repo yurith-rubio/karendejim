@@ -61,7 +61,7 @@ export function Projects() {
     <section className="py-28 px-8" id="projects">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="deep-purple" className="mb-4" placeholder={undefined} >
-          My Projects
+          My static projects
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
@@ -69,11 +69,6 @@ export function Projects() {
           <ProjectCard key={idx} {...props} />
         ))}
       </div>
-      {/* <div className="container-video">
-        <iframe className="responsive-iframe"  width="auto" height="500"
-          src="https://www-ccv.adobe.io/v1/player/ccv/QwevyqvTxuy/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
-        </iframe> 
-      </div> */}
     </section>
   );
 }
