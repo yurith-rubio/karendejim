@@ -4,7 +4,7 @@ import { Carousel } from "@material-tailwind/react";
 
 export function Motion() {
     return <>
-        <Carousel className="w-4/6 m-auto" placeholder={undefined}>
+        {/* <Carousel className="w-4/6 m-auto" placeholder={undefined}>
             <div className="container-video">
                 <iframe className="responsive-iframe" width="auto" height="500"
                 src="https://www-ccv.adobe.io/v1/player/ccv/QwevyqvTxuy/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
@@ -20,7 +20,7 @@ export function Motion() {
                 src="https://www-ccv.adobe.io/v1/player/ccv/UztmyZbWX2T/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
                 </iframe> 
             </div>
-        </Carousel>
+        </Carousel> */}
     </>
 }
 

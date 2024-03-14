@@ -8,7 +8,6 @@ import Tools from "./tools";
 import Projects from "./projects";
 import Resume from "./resume";
 import Testimonial from "./testimonial";
-import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
 import Carousel from "./motion";
 
@@ -23,7 +22,6 @@ export default function Portfolio() {
       <Projects />
       <Resume />
       <Testimonial />
-      {/* <PopularClients /> */}
       <ContactForm />
       <Footer />
     </>
