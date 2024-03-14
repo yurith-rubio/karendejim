@@ -196,8 +196,8 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
       
       <Dialog open={open} handler={handleOpen} placeholder={undefined} size="xxl">
         <DialogHeader placeholder={undefined} className="bg-gray-50 flex w-full fixed top-0 z-10">
-          <Button color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
-                <span>Close</span>
+          <Button color="white" className="ml-auto" onClick={handleOpen} placeholder={undefined} >
+            <img src="/icons/close.svg" className="w-8 h-8"/>
           </Button>
         </DialogHeader>
         <DialogBody placeholder={undefined} className="bg-gray-50 grid gap-9 p-8">
@@ -211,6 +211,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           
           {IMAGES[title] ?
             IMAGES[title].map((url: string, key: number) => (
+              <a href={url} target="_blank" >
               <Image
                 key={key}
                 src={url}
@@ -218,7 +219,8 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
                 width={768}
                 height={768}
                 className="object-cover rounded-xl mr-auto ml-auto"
-              />
+                />
+                </a>
             ))
             : 
             <Image
@@ -230,11 +232,6 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
             />
           }
           </DialogBody>
-          <DialogFooter placeholder={undefined} className="bg-gray-50" >
-            <Button color="deep-purple" className="mr-auto ml-auto" onClick={handleOpen} placeholder={undefined} >
-              <span>Close</span>
-            </Button>
-          </DialogFooter>
         </Dialog>
     </Card>
 

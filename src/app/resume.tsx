@@ -10,16 +10,16 @@ import { ResumeItem } from "../components";
 
 const RESUME_ITEMS = [
   {
+    icon: PuzzlePieceIcon,
+    children: "Master in Integrated Design",
+  },
+  {
     icon: ChartBarIcon,
     children: "Bachelor of Graphic Design",
   },
   {
     icon: PuzzlePieceIcon,
-    children: "Master in Intgrated Design",
-  },
-  {
-    icon: PuzzlePieceIcon,
-    children: "Technology Degree",
+    children: "Video & Multimedia Technology Degree",
   },
 ];
 
@@ -32,13 +32,11 @@ export function Resume() {
             Education
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500" placeholder={undefined} >
-            Highly skilled and creative Web Developer with 5+ years of
-            experience in crafting visually stunning and functionally robust
-            websites and web applications.
-          </Typography>
+            Highly skilled and creative Graphic Designer with 5+ years of
+            experience in crafting visually stunning and impactful designs.          </Typography>
           <Button
             variant="text"
-            color="gray"
+            color="deep-purple"
             className="flex items-center gap-2"
             onClick={() => window.open("https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1", "_blank")}
             placeholder={undefined} 
@@ -46,7 +44,7 @@ export function Resume() {
             Open Resume
             <ArrowRightIcon
               strokeWidth={3}
-              className="h-3.5 w-3.5 text-gray-900"
+              className="h-3.5 w-3.5 text-deep-purple-500"
             />
           </Button>
         </div>

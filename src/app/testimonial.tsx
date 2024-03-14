@@ -10,27 +10,27 @@ export function Testimonial() {
     <section className="py-12 px-8 lg:py-24">
       <div className="container max-w-screen-lg mx-auto">
         <div className="container mx-auto mb-20 text-center">
-          <Typography variant="h2" color="blue-gray" className="mb-4" placeholder={undefined} >
+          {/* <Typography variant="h2" color="blue-gray" className="mb-4" placeholder={undefined} >
             What my clients and managers say
-          </Typography>
-          <Typography
+          </Typography> */}
+          {/* <Typography
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
             placeholder={undefined} 
           >
             Working for exiting companies as well with great clients, I have the privilege to have a good relationship with them. Here are some of their thoughts about me.
-          </Typography>
+          </Typography> */}
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row" placeholder={undefined} >
           <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between " placeholder={undefined} >
             <div className="w-full mb-10 lg:mb-0">
               <Typography
                 variant="h3"
-                color="blue-gray"
+                color="deep-purple"
                 className="mb-4 font-bold lg:max-w-xs"
                 placeholder={undefined} 
               >
-                What people has to say about me
+                What my clients and managers say
               </Typography>
               {active === 1 && 
                 <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >

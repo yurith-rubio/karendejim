@@ -66,7 +66,7 @@ export function Navbar() {
           <ul className="ml-10 hidden items-center gap-8 lg:flex">
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
               <NavItem key={name} href={href}>
-                <Icon className="h-5 w-5" color="deep-purple" />
+                {/* <Icon className="h-5 w-5" color="deep-purple" /> */}
                 <Typography color="deep-purple" placeholder={undefined} className="font-bold pr-5">
                   {name}
                 </Typography>

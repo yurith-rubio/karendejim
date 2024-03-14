@@ -29,9 +29,9 @@ export function Clients() {
         {/* <Typography variant="h6" color="deep-purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
           Clients and companies I have worked with
         </Typography> */}
-        <Typography variant="h2" color="deep-purple" className="mb-2 font-bold uppercase text-1xl" placeholder={undefined}>
+        {/* <Typography variant="h2" color="deep-purple" className="mb-2 font-bold uppercase text-1xl" placeholder={undefined}>
           Trusted by
-        </Typography>
+        </Typography> */}
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
             <a href={logo.alt} key={key}>
@@ -40,7 +40,7 @@ export function Clients() {
               alt={logo.img.slice(0, -4)}
               width={768}
               height={768}
-              className="w-40"
+              className="w-60 pl-5 pr-5"
               src={`/logos/logo-${ logo.img }`}
             />
             </a>

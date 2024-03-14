@@ -29,6 +29,12 @@ const SKILLS = [
       "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
   },
   {
+    icon: "/icons/lightroom.svg",
+    title: "Adobe Lightroom",
+    children:
+      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
+  },
+  {
     icon: "/icons/figma.svg",
     title: "Figma",
     children:
@@ -40,20 +46,26 @@ const SKILLS = [
     children:
       "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
   },
+  {
+    icon: "/icons/chatgpt.svg",
+    title: "OpenAI",
+    children:
+      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
+  },
 ];
 
 export function Tools() {
   return (
     <section className="px-8" id="tools">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="deep-purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
+        {/* <Typography color="deep-purple" className="mb-2 font-bold uppercase" placeholder={undefined} >
           Tools
-        </Typography>
+        </Typography> */}
         <Typography variant="h1" color="deep-purple" className="mb-4" placeholder={undefined} >
-          What I use
+          The tools I use
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-2 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}
