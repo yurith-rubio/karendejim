@@ -17,6 +17,10 @@ const RESUME_ITEMS = [
     icon: PuzzlePieceIcon,
     children: "Master in Intgrated Design",
   },
+  {
+    icon: PuzzlePieceIcon,
+    children: "Technology Degree",
+  },
 ];
 
 export function Resume() {

@@ -100,6 +100,47 @@ const IMAGES: any = {
     "/project-images/Social-13.png",
     "/project-images/Social-14.png",
   ],
+  "Design Posters": [
+    "/project-images/Posters-1.jpg",
+    "/project-images/Posters-2.jpg",
+  ],
+  "Set of Illustrations for ITONICS": [
+    "/project-images/Illustrations-1.png",
+    "/project-images/Illustrations-2.gif",
+    "/project-images/Illustrations-3.png",
+    "/project-images/Illustrations-4.png",
+    "/project-images/Illustrations-5.png",
+    "/project-images/Illustrations-6.png",
+    "/project-images/Illustrations-7.png",
+  ],
+  "Presentation - Brochure Design": [
+    "/project-images/Brochure-1.jpg",
+    "/project-images/Brochure-2.jpg",
+    "/project-images/Brochure-3.jpg",
+    "/project-images/Brochure-4.jpg",
+    "/project-images/Brochure-5.jpg",
+    "/project-images/Brochure-6.jpg",
+    "/project-images/Brochure-7.jpg",
+    "/project-images/Brochure-8.jpg",
+    "/project-images/Brochure-9.jpg",
+    "/project-images/Brochure-10.jpg",
+    "/project-images/Brochure-11.jpg",
+    "/project-images/Brochure-12.jpg",
+    "/project-images/Brochure-13.jpg",
+    "/project-images/Brochure-14.jpg",
+    "/project-images/Brochure-15.jpg",
+    "/project-images/Brochure-16.jpg",
+    "/project-images/Brochure-17.jpg",
+    "/project-images/Brochure-18.jpg",
+    "/project-images/Brochure-19.jpg",
+    "/project-images/Brochure-20.jpg",
+  ],
+  "Catalogue Design": [
+    "/project-images/Catalogue-1.jpg",
+    "/project-images/Catalogue-2.jpg",
+    "/project-images/Catalogue-3.jpg",
+    "/project-images/Catalogue-4.jpg",
+  ],
   "9° Design Price MARION HERNANDEZ": [
     "/project-images/Premio-1.png",
     "/project-images/Premio-2.jpg",
@@ -107,6 +148,14 @@ const IMAGES: any = {
     "/project-images/Premio-4.jpg",
     "/project-images/Premio-5.jpg",
   ],
+  "Traveling guide 'Viajes con estilo'": [
+    "/project-images/Traveling-1.jpg",
+    "/project-images/Traveling-2.jpg",
+    "/project-images/Traveling-3.jpg",
+    "/project-images/Traveling-4.jpg",
+    "/project-images/Traveling-5.jpg",
+    "/project-images/Traveling-6.jpg",
+  ]
 };
 
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {
