@@ -188,7 +188,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
       <Dialog open={open} handler={handleOpen} placeholder={undefined} size="xxl">
         <DialogHeader placeholder={undefined} className="bg-gray-50 flex w-full fixed top-0 z-10">
           <Button color="white" className="ml-auto" onClick={handleOpen} placeholder={undefined} >
-            <img src="/icons/close.svg" className="w-8 h-8"/>
+            <img src="/icons/close.svg" className="w-8 h-8" alt="close icon" />
           </Button>
         </DialogHeader>
         <DialogBody placeholder={undefined} className="bg-gray-50 grid gap-9 p-8">
