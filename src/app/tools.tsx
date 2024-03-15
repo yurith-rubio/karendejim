@@ -58,10 +58,8 @@ export function Tools() {
   return (
     <section className="px-8" id="tools">
       <div className="container mx-auto mb-20 text-center">
-        {/* <Typography color="deep-purple" className="mb-2 font-bold uppercase" placeholder={null} >
-          Tools
-        </Typography> */}
-        <Typography variant="h1" color="deep-purple" className="mb-4" placeholder={null} >
+        {/* @ts-ignore */}
+        <Typography variant="h1" color="deep-purple" className="mb-4" >
           The tools I use
         </Typography>
       </div>

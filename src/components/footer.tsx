@@ -18,18 +18,19 @@ export function Footer() {
           <ul className="flex gap-8 items-center">
             {LINKS.map((link) => (
               <li key={link}>
+                {/* @ts-ignore */}
                 <Typography
                   as="a"
                   href={`#${link.toLowerCase()}`}
                   variant="small"
                   className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
-                  placeholder={null} 
                 >
                   {link}
                 </Typography>
               </li>
             ))}
-            <Button color="deep-purple" placeholder={null} >Hire me</Button>
+            {/* @ts-ignore */}
+            <Button color="deep-purple" >Hire me</Button>
           </ul>
         </div>
       </div>
