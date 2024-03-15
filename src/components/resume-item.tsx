@@ -8,14 +8,15 @@ interface ResumeItemProps {
 export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
   return (
     <div className="flex items-start gap-4">
+      {/* @ts-ignore */}
       <Card
         color="deep-purple"
         className="h-12 w-12 shrink-0 items-center justify-center !rounded-lg"
-        placeholder={null} 
       >
         <Icon className="h-6 w-6" strokeWidth={2} />
       </Card>
-      <Typography className="w-full font-normal !text-gray-500" placeholder={null} >
+      {/* @ts-ignore */}
+      <Typography className="w-full font-normal !text-gray-500" >
         {children}
       </Typography>
     </div>
