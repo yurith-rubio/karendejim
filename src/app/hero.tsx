@@ -24,7 +24,7 @@ function Hero() {
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            I love to use the power of design to make an idea talk by itself.
+            I’m a graphic designer based in Germany for the last six years. With over ten years of experience, I specialize in both B2B and B2C companies, working together with Marketing and Creative teams. Collaborating with people from diverse cultures has given me the opportunity to enhance my communication skills and adaptability.
           </Typography>
           <div className="grid">
             <a href="#projects">
