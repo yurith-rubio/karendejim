@@ -23,40 +23,40 @@ export function Testimonial() {
                 What my clients and managers say
               </Typography>
               {active === 1 && 
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined}>
+                <h3 color="blue-gray" className="text-2xl mb-0.5" >
                     Markus Gattenlöhner
-                    <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                    <p className="font-normal mb-5 !text-gray-500"  >
                       Creative Director, ITONICS GmbH
                       <br />
                       +27 66 551 0997
                       <br />
                       markus.gattenloehner@itonics.de
-                    </Typography>
-                </Typography>
+                    </p>
+                </h3>
               }
               {active === 2 &&
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                <h3 color="blue-gray" className="text-2xl mb-0.5" >
                   Marison Gómez
-                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                  <p className="font-normal mb-5 !text-gray-500" >
                     Image and style Consultant
                     <br />
                     +1 (786) 308-7845
                     <br />
                     info@styleandimagestudio.com
-                  </Typography>
-                </Typography>
+                  </p>
+                </h3>
               }
               {active === 3 &&
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                <h3 color="blue-gray" className="text-2xl mb-0.5" >
                   Christoph Augustin
-                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                  <p className="font-normal mb-5 !text-gray-500" >
                     Tax consultant
                     <br />
                     +49 172 4361973
                     <br />
                     christoph_augustin@t-online.de
-                  </Typography>
-                </Typography>
+                  </p>
+                </h3>
               }
               <div className="flex items-center gap-4">
                 {/* @ts-ignore */}

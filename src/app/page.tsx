@@ -14,14 +14,14 @@ export default function Portfolio() {
   return (
     <>
       <Navbar />
-      {/* <Hero />
+      <Hero />
       <Clients />
       <Tools />
       <Projects />
       <Resume />
       <Testimonial />
       <ContactForm />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
