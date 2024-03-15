@@ -162,8 +162,8 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <Card color="transparent" shadow={false} placeholder={undefined} >
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48" placeholder={undefined} >
+    <Card color="transparent" shadow={false} placeholder={null} >
+      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48" placeholder={null} >
         <img
           src={img}
           alt={title}
@@ -173,26 +173,26 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           onClick={handleOpen}
         />
       </CardHeader>
-      <CardBody className="p-0" placeholder={undefined} >
-          <Typography variant="h5" className="mb-2" color="deep-purple" placeholder={undefined} >
+      <CardBody className="p-0" placeholder={null} >
+          <Typography variant="h5" className="mb-2" color="deep-purple" placeholder={null} >
             {title}
           </Typography>
-        <Typography className="mb-6 font-normal !text-gray-500" placeholder={undefined} >
+        <Typography className="mb-6 font-normal !text-gray-500" placeholder={null} >
           {desc}
         </Typography>
-        <Button onClick={handleOpen} color="deep-purple" placeholder={undefined} >
+        <Button onClick={handleOpen} color="deep-purple" placeholder={null} >
           See poject
         </Button>
       </CardBody>
       
-      <Dialog open={open} handler={handleOpen} placeholder={undefined} size="xxl">
-        <DialogHeader placeholder={undefined} className="bg-gray-50 flex w-full fixed top-0 z-10">
-          <Button color="white" className="ml-auto" onClick={handleOpen} placeholder={undefined} >
+      <Dialog open={open} handler={handleOpen} placeholder={null} size="xxl">
+        <DialogHeader placeholder={null} className="bg-gray-50 flex w-full fixed top-0 z-10">
+          <Button color="white" className="ml-auto" onClick={handleOpen} placeholder={null} >
             <img src="/icons/close.svg" className="w-8 h-8" alt="close icon" />
           </Button>
         </DialogHeader>
-        <DialogBody placeholder={undefined} className="bg-gray-50 grid gap-9 p-8">
-          <Typography variant="h2" color="deep-purple" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" placeholder={undefined} >
+        <DialogBody placeholder={null} className="bg-gray-50 grid gap-9 p-8">
+          <Typography variant="h2" color="deep-purple" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" placeholder={null} >
             The key to more success is to have a lot of pillows. Put it this way,
             it took me twenty five years to get these plants, twenty five years of
             blood sweat and tears, and I&apos;m never giving up, I&apos;m just

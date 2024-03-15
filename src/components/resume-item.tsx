@@ -11,11 +11,11 @@ export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
       <Card
         color="deep-purple"
         className="h-12 w-12 shrink-0 items-center justify-center !rounded-lg"
-        placeholder={undefined} 
+        placeholder={null} 
       >
         <Icon className="h-6 w-6" strokeWidth={2} />
       </Card>
-      <Typography className="w-full font-normal !text-gray-500" placeholder={undefined} >
+      <Typography className="w-full font-normal !text-gray-500" placeholder={null} >
         {children}
       </Typography>
     </div>

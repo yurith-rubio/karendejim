@@ -9,21 +9,21 @@ export function Testimonial() {
   return (
     <section className="py-12 px-8 lg:py-24">
       <div className="container max-w-screen-lg mx-auto">
-        <Card color="transparent" shadow={false} className="py-8 lg:flex-row" placeholder={undefined} >
-          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between " placeholder={undefined} >
+        <Card color="transparent" shadow={false} className="py-8 lg:flex-row" placeholder={null} >
+          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between " placeholder={null} >
             <div className="w-full mb-10 lg:mb-0">
               <Typography
                 variant="h3"
                 color="deep-purple"
                 className="mb-4 font-bold lg:max-w-xs"
-                placeholder={undefined} 
+                placeholder={null} 
               >
                 What my clients and managers say
               </Typography>
               {active === 1 && 
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={null} >
                     Markus Gattenlöhner
-                    <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                    <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={null} >
                       Creative Director, ITONICS GmbH
                       <br />
                       +27 66 551 0997
@@ -33,9 +33,9 @@ export function Testimonial() {
                 </Typography>
               }
               {active === 2 &&
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={null} >
                   Marison Gómez
-                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={null} >
                     Image and style Consultant
                     <br />
                     +1 (786) 308-7845
@@ -45,9 +45,9 @@ export function Testimonial() {
                 </Typography>
               }
               {active === 3 &&
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={null} >
                   Christoph Augustin
-                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={null} >
                     Tax consultant
                     <br />
                     +49 172 4361973
@@ -66,7 +66,7 @@ export function Testimonial() {
                     active === 1 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(1)}
-                  placeholder={undefined} 
+                  placeholder={null} 
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
                 <Avatar
@@ -78,7 +78,7 @@ export function Testimonial() {
                     active === 2 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(2)}
-                  placeholder={undefined} 
+                  placeholder={null} 
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100" />
                 <Avatar
@@ -90,7 +90,7 @@ export function Testimonial() {
                     active === 3 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(3)}
-                  placeholder={undefined} 
+                  placeholder={null} 
                 />
               </div>
             </div>

@@ -12,7 +12,7 @@ function Hero() {
             variant="h1"
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
-            placeholder={undefined}
+            placeholder={null}
           >
             Karen <span style={{fontWeight: 100}}>Delgado</span>
           </Typography>

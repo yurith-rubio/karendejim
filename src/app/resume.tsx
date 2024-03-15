@@ -28,10 +28,10 @@ export function Resume() {
     <section className="px-8 py-24">
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
-          <Typography variant="h2" color="deep-purple" placeholder={undefined} >
+          <Typography variant="h2" color="deep-purple" placeholder={null} >
             Education
           </Typography>
-          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500" placeholder={undefined} >
+          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500" placeholder={null} >
             Highly skilled and creative Graphic Designer with 5+ years of
             experience in crafting visually stunning and impactful designs.          </Typography>
           <Button
@@ -39,7 +39,7 @@ export function Resume() {
             color="deep-purple"
             className="flex items-center gap-2"
             onClick={() => window.open("https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1", "_blank")}
-            placeholder={undefined} 
+            placeholder={null} 
           >
             Open Resume
             <ArrowRightIcon

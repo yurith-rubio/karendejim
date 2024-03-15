@@ -34,7 +34,7 @@ function NavItem({ children, href }: NavItemProps) {
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
-        placeholder={undefined} 
+        placeholder={null} 
       >
         {children}
       </Typography>
@@ -55,9 +55,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50" placeholder={undefined} >
+    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50" placeholder={null} >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold" placeholder={undefined} >
+        <Typography color="blue-gray" className="text-lg font-bold" placeholder={null} >
           Karen Delgado
         </Typography>
         
@@ -66,7 +66,7 @@ export function Navbar() {
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
               <NavItem key={name} href={href}>
                 {/* <Icon className="h-5 w-5" color="deep-purple" /> */}
-                <Typography color="deep-purple" placeholder={undefined} className="font-bold pr-5">
+                <Typography color="deep-purple" placeholder={null} className="font-bold pr-5">
                   {name}
                 </Typography>
               </NavItem>
@@ -74,7 +74,7 @@ export function Navbar() {
           </ul>
           {/* <Button variant="text">Sign In</Button> */}
           <a href="#contact">
-            <Button color="deep-purple" placeholder={undefined} >Hire me</Button>
+            <Button color="deep-purple" placeholder={null} >Hire me</Button>
           </a>
         </div>
         <IconButton
@@ -82,7 +82,7 @@ export function Navbar() {
           color="gray"
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
-          placeholder={undefined} 
+          placeholder={null} 
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -104,7 +104,7 @@ export function Navbar() {
           <div className="mt-6 mb-4 flex items-center gap-2">
             {/* <Button variant="text">Sign In</Button> */}
             <a href="https://www.material-tailwind.com/blocks">
-              <Button color="deep-purple" placeholder={undefined} >blocks</Button>
+              <Button color="deep-purple" placeholder={null} >blocks</Button>
             </a>
           </div>
         </div>
