@@ -12,7 +12,7 @@ export function ContactForm() {
   return (
     <section className="px-8 py-16" id="contact">
       <div>
-        <Card shadow={false} className="container mx-auto border border-gray/50" placeholder={null} >
+        {/* <Card shadow={false} className="container mx-auto border border-gray/50" placeholder={null} >
           <CardBody className="col-span-3 rounded-lg h-full py-8 p-5 md:p-16 text-center" placeholder={null} >
             <Typography variant="h3" color="deep-purple" className="mb-2 pb-5 pt-10" placeholder={null} >
               Do not hesitate, and contact me
@@ -38,7 +38,7 @@ export function ContactForm() {
               </Typography>
             </div>            
           </CardBody>
-        </Card>
+        </Card> */}
       </div>
     </section>
   );
