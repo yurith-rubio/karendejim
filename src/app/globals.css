@@ -2,7 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* After reset */
 html {
   scroll-behavior: smooth;
 }
