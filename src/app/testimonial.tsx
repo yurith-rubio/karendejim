@@ -9,21 +9,23 @@ export function Testimonial() {
   return (
     <section className="py-12 px-8 lg:py-24">
       <div className="container max-w-screen-lg mx-auto">
-        <Card color="transparent" shadow={false} className="py-8 lg:flex-row" placeholder={null} >
-          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between " placeholder={null} >
+        {/* @ts-ignore */}
+        <Card color="transparent" shadow={false} className="py-8 lg:flex-row" >
+          {/* @ts-ignore */}
+          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between " >
             <div className="w-full mb-10 lg:mb-0">
+              {/* @ts-ignore */}
               <Typography
                 variant="h3"
                 color="deep-purple"
                 className="mb-4 font-bold lg:max-w-xs"
-                placeholder={null} 
               >
                 What my clients and managers say
               </Typography>
               {active === 1 && 
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={null} >
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined}>
                     Markus Gattenlöhner
-                    <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={null} >
+                    <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
                       Creative Director, ITONICS GmbH
                       <br />
                       +27 66 551 0997
@@ -33,9 +35,9 @@ export function Testimonial() {
                 </Typography>
               }
               {active === 2 &&
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={null} >
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
                   Marison Gómez
-                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={null} >
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
                     Image and style Consultant
                     <br />
                     +1 (786) 308-7845
@@ -45,9 +47,9 @@ export function Testimonial() {
                 </Typography>
               }
               {active === 3 &&
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={null} >
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" placeholder={undefined} >
                   Christoph Augustin
-                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={null} >
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" placeholder={undefined} >
                     Tax consultant
                     <br />
                     +49 172 4361973
@@ -57,6 +59,7 @@ export function Testimonial() {
                 </Typography>
               }
               <div className="flex items-center gap-4">
+                {/* @ts-ignore */}
                 <Avatar
                   variant="rounded"
                   src="/image/avatar1.jpg"
@@ -66,9 +69,9 @@ export function Testimonial() {
                     active === 1 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(1)}
-                  placeholder={null} 
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
+                {/* @ts-ignore */}
                 <Avatar
                   variant="rounded"
                   src="/image/avatar2.jpg"
@@ -78,9 +81,9 @@ export function Testimonial() {
                     active === 2 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(2)}
-                  placeholder={null} 
                 />
                 <div className="w-[1px] h-[36px] bg-blue-gray-100" />
+                {/* @ts-ignore */}
                 <Avatar
                   variant="rounded"
                   src="/image/avatar3.jpg"
@@ -90,7 +93,6 @@ export function Testimonial() {
                     active === 3 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(3)}
-                  placeholder={null} 
                 />
               </div>
             </div>

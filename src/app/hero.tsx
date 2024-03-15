@@ -8,11 +8,11 @@ function Hero() {
     <header className="bg-white p-8">
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
+          {/* @ts-ignore */}
           <Typography
             variant="h1"
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
-            placeholder={null}
           >
             Karen <span style={{fontWeight: 100}}>Delgado</span>
           </Typography>

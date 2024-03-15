@@ -60,7 +60,8 @@ export function Projects() {
   return (
     <section className="py-28 px-8" id="projects">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="deep-purple" className="mb-4" placeholder={null} >
+        {/* @ts-ignore */}
+        <Typography variant="h2" color="deep-purple" className="mb-4" >
           My static projects
         </Typography>
       </div>
