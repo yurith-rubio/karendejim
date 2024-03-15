@@ -21,7 +21,7 @@ function Hero() {
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            I love to use the power of design to make an idea talk by itself.
+            I love to use the power of design to make an idea talk by itself. Test
           </Typography>
           <div className="grid">
             <a href="#projects">
