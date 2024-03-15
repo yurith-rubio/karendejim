@@ -28,16 +28,13 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      {/* @ts-ignore */}
-      <Typography
-        as="a"
+      <a
         href={href || "#"}
-        variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
       >
         {children}
-      </Typography>
+      </a>
     </li>
   );
 }
@@ -57,27 +54,22 @@ export function Navbar() {
   return (
     <div className="border-0 sticky top-0 z-50" >
       <div className="container mx-auto flex items-center justify-between">
-        {/* @ts-ignore */}
-        <Typography color="blue-gray" className="text-lg font-bold" >
+        <p color="blue-gray" className="text-lg font-bold" >
           Karen Delgado
-        </Typography>
+        </p>
         
         <div className="hidden items-center gap-2 lg:flex">
           <ul className="ml-10 hidden items-center gap-8 lg:flex">
-            {NAV_MENU.map(({ name, icon: Icon, href }) => (
+            {NAV_MENU.map(({ name, href }) => (
               <NavItem key={name} href={href}>
-                {/* <Icon className="h-5 w-5" color="deep-purple" /> */}
-                {/* @ts-ignore */}
-                <Typography color="deep-purple" className="font-bold pr-5">
+                <p color="deep-purple" className="font-bold pr-5">
                   {name}
-                </Typography>
+                </p>
               </NavItem>
             ))}
           </ul>
-          {/* <Button variant="text">Sign In</Button> */}
           <a href="#contact">
-            {/* @ts-ignore */}
-            <Button color="deep-purple" >Hire me</Button>
+            <button color="deep-purple" >Hire me</button>
           </a>
         </div>
         {/* @ts-ignore */}
@@ -105,10 +97,10 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            {/* <Button variant="text">Sign In</Button> */}
+            {/* <button variant="text">Sign In</button> */}
             <a href="https://www.material-tailwind.com/blocks">
               {/* @ts-ignore */}
-              <Button color="deep-purple" >blocks</Button>
+              <button color="deep-purple" >blocks</button>
             </a>
           </div>
         </div>

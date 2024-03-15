@@ -31,7 +31,7 @@ export function Footer() {
               </li>
             ))}
             {/* @ts-ignore */}
-            <Button color="deep-purple" >Hire me</Button>
+            <button color="deep-purple" >Hire me</button>
           </ul>
         </div>
       </div>
