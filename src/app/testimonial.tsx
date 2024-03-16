@@ -27,6 +27,7 @@ export function Testimonial() {
                 {/* @ts-ignore */}
                 <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" >
                     Markus Gattenlöhner
+                    {/* @ts-ignore */}
                     <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500"  >
                       Creative Director, ITONICS GmbH
                       <br />
