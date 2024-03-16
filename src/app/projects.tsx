@@ -2,7 +2,7 @@
 
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 const PROJECTS = [
   {
@@ -61,20 +61,20 @@ const PROJECTS = [
 ];
 
 export function Projects() {
-  const { ref, inView } = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
+  // const { ref, inView } = useInView({
+  //   /* Optional options */
+  //   threshold: 0,
+  // });
 
   return (
-    <section ref={ref} className="py-28 px-8" id="projects">
-      <div className={`${inView ? "view" : "transparent"} container mx-auto mb-20 text-center`}>
+    <section className="py-28 px-8" id="projects">
+      <div className={` container mx-auto mb-20 text-center`}>
         {/* @ts-ignore */}
         <Typography variant="h2" color="deep-purple" className="mb-4" >
           My static projects
         </Typography>
       </div>
-      <div className={`${inView ? "view" : "transparent"} container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4` }>
+      <div className={` container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4` }>
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}
