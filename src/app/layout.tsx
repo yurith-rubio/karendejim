@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+// import { Abril_Fatface } from "next/font/google";
 import { Layout } from "@/components";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
-  display: "swap",
-});
+// const abril_fatface = Abril_Fatface({
+//   subsets: ["latin"],
+//   weight: ["400"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Karen Delgado - Portfolio",
@@ -30,8 +30,11 @@ export default function RootLayout({
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"></link>
       </head>
-      <body className={roboto.className}>
+      <body>
         <Layout>
           {children}
         </Layout>

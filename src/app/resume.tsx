@@ -1,6 +1,8 @@
 "use client";
 
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
+import { Button } from '../components/button'
+
 import {
   ChartBarIcon,
   PuzzlePieceIcon,
@@ -23,6 +25,10 @@ const RESUME_ITEMS = [
   },
 ];
 
+function getResume() {
+  return () => window.open("https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1", "_blank");
+}
+
 export function Resume() {
   return (
     <section className="px-8 py-24">
@@ -38,16 +44,11 @@ export function Resume() {
             experience in crafting visually stunning and impactful designs.
           </Typography>
           {/* @ts-ignore */}
-          <Button
-            variant="text"
-            color="deep-purple"
-            className="flex items-center gap-2"
-            onClick={() => window.open("https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1", "_blank")}
-          >
+          <Button onClick={getResume}>
             Open Resume
             <ArrowRightIcon
               strokeWidth={3}
-              className="h-3.5 w-3.5 text-deep-purple-500"
+              className="h-3.5 w-3.5 text-white"
             />
           </Button>
         </div>
