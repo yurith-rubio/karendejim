@@ -3,12 +3,18 @@
 import Image from "next/image";
 import {Typography } from "@material-tailwind/react";
 import Button from "@/components/button";
+import { useInView } from "react-intersection-observer";
 
 function Hero() {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+  
   return (
-    <header className="bg-white p-8">
+    <header className="bg-white p-8" ref={ref}>
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
-        <div className="row-start-2 lg:row-auto">
+        <div className={`${inView ? "view" : "transparent"} row-start-2 lg:row-auto`}>
           {/* @ts-ignore */}
           <Typography
             variant="h1"
@@ -31,7 +37,7 @@ function Hero() {
           <div className="grid">
             <a href="#projects">
               {/* @ts-ignore */}
-              <Button>
+              <Button btn="primary">
                 See projects
               </Button>
             </a>

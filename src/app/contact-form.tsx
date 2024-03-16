@@ -22,24 +22,22 @@ export function ContactForm() {
             <div className="flex gap-5 justify-center">
               <PhoneIcon className="h-6 w-6 text-blue-gray mt-1" />
               {/* @ts-ignore */}
-              <Typography variant="h4" color="blue-gray" className="mb-2" >
+              <Typography color="blue-gray" className="mb-2 text-2xl" >
                 +1(49) 160 6013 255
               </Typography>
             </div>
             <div className="flex my-2 gap-5 justify-center">
-              <EnvelopeIcon className="h-6 w-6 text-blue-gray mt-5" />
+              <EnvelopeIcon className="h-6 w-6 text-blue-gray mt-1" />
               {/* @ts-ignore */}
-              <Typography variant="h4" color="blue-gray" className="mb-2" >
+              <Typography color="blue-gray" className="mb-2 text-2xl" >
                 karendejim@gmail.com
               </Typography>
             </div>
             <div className="flex mb-10 gap-5 justify-center">
               {/* @ts-ignore */}
-              <Typography variant="h4" color="blue-gray" className="mb-2" >
-                <a href="https://www.linkedin.com/in/karen-delgado-513852133">
-                  <img src="/logos/linkedin.svg" alt="linkedin logo" width={100} />
-                </a>
-              </Typography>
+              <a href="https://www.linkedin.com/in/karen-delgado-513852133">
+                <img src="/logos/linkedin.svg" alt="linkedin logo" width={100} />
+              </a>
             </div>            
           </CardBody>
         </Card>

@@ -44,11 +44,11 @@ export function Resume() {
             experience in crafting visually stunning and impactful designs.
           </Typography>
           {/* @ts-ignore */}
-          <Button onClick={getResume}>
+          <Button onClick={getResume} btn="secondary">
             Open Resume
             <ArrowRightIcon
               strokeWidth={3}
-              className="h-3.5 w-3.5 text-white"
+              className="h-3.5 w-3.5 text-purple-500 arrow"
             />
           </Button>
         </div>

@@ -60,3 +60,40 @@ button .close{
   align-content: center;
   border-radius: 5px;
 }
+button.primary{
+  background-color: #611f69;
+  color: #fff;
+  border: 2px solid #611f69;
+}
+button.primary:hover, button.secondary:hover{
+  background-color: #7a2383;
+  color: #fff;
+  border: 2px solid #7a2383;
+}
+button.secondary:hover .arrow{
+  color: #fff;
+}
+button.secondary{
+  background-color: #fff;
+  color: #611f69;
+  border: 2px solid #611f69;
+}
+
+.transparent{
+  opacity: 0;
+}
+/* Animation up */
+.view {
+  animation: up 1s forwards;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}

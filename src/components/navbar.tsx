@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Collapse,
-  Button,
   IconButton,
   Typography,
 } from "@material-tailwind/react";
@@ -9,6 +8,7 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import { Button } from "./button";
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -41,7 +41,7 @@ export function Navbar() {
           </a>
           <a href="#contact">
             {/* @ts-ignore */}
-            <Button color="deep-purple" >Hire me</Button>
+            <Button btn="primary" >Hire me</Button>
           </a>
         </div>
         {/* @ts-ignore */}

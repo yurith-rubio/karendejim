@@ -9,9 +9,10 @@ import Projects from "./projects";
 import Resume from "./resume";
 import Testimonial from "./testimonial";
 import ContactForm from "./contact-form";
-import Carousel from "./motion"
+import Carousel from "./motion";
 
 export default function Portfolio() {
+
   return (
     <>
       <Navbar />
