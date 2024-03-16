@@ -23,40 +23,51 @@ export function Testimonial() {
                 What my clients and managers say
               </Typography>
               {active === 1 && 
-                <h3 color="blue-gray" className="text-2xl mb-0.5" >
+                <>
+                {/* @ts-ignore */}
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" >
                     Markus Gattenlöhner
-                    <p className="font-normal mb-5 !text-gray-500"  >
+                    <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500"  >
                       Creative Director, ITONICS GmbH
                       <br />
                       +27 66 551 0997
                       <br />
                       markus.gattenloehner@itonics.de
-                    </p>
-                </h3>
+                    </Typography>
+                </Typography>
+                </>
               }
               {active === 2 &&
-                <h3 color="blue-gray" className="text-2xl mb-0.5" >
+                <>
+                {/* @ts-ignore */}
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" >
                   Marison Gómez
-                  <p className="font-normal mb-5 !text-gray-500" >
+                  {/* @ts-ignore */}
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" >
                     Image and style Consultant
                     <br />
                     +1 (786) 308-7845
                     <br />
                     info@styleandimagestudio.com
-                  </p>
-                </h3>
+                  </Typography>
+                </Typography>
+                </>
               }
               {active === 3 &&
-                <h3 color="blue-gray" className="text-2xl mb-0.5" >
+                <>
+                {/* @ts-ignore */}
+                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" >
                   Christoph Augustin
-                  <p className="font-normal mb-5 !text-gray-500" >
+                  {/* @ts-ignore */}
+                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" >
                     Tax consultant
                     <br />
                     +49 172 4361973
                     <br />
                     christoph_augustin@t-online.de
-                  </p>
-                </h3>
+                  </Typography>
+                </Typography>
+                </>
               }
               <div className="flex items-center gap-4">
                 {/* @ts-ignore */}

@@ -187,9 +187,9 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           {desc}
         </Typography>
         {/* @ts-ignore */}
-        <button onClick={handleOpen} color="deep-purple" >
+        <Button onClick={handleOpen} color="deep-purple" >
           See poject
-        </button>
+        </Button>
       </CardBody>
       
       {/* @ts-ignore */}
@@ -197,9 +197,9 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         {/* @ts-ignore */}
         <DialogHeader className="bg-gray-50 flex w-full fixed top-0 z-10">
           {/* @ts-ignore */}
-          <button color="white" className="ml-auto" onClick={handleOpen} >
+          <Button color="white" className="ml-auto" onClick={handleOpen} >
             <img src="/icons/close.svg" className="w-8 h-8" alt="close icon" />
-          </button>
+          </Button>
         </DialogHeader>
         {/* @ts-ignore */}
         <DialogBody className="bg-gray-50 grid gap-9 p-8">

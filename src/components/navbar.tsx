@@ -52,24 +52,31 @@ export function Navbar() {
   }, []);
 
   return (
-    <div className="border-0 sticky top-0 z-50" >
+    <>
+    {/* @ts-ignore */}
+    <div className="block w-full max-w-screen rounded-xl py-4 px-8 shadow-md backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border-white/80 bg-white text-white border-0 sticky top-0 z-50" >
       <div className="container mx-auto flex items-center justify-between">
-        <p color="blue-gray" className="text-lg font-bold" >
+        {/* @ts-ignore */}
+        <Typography color="blue-gray" className="text-lg font-bold" >
           Karen Delgado
-        </p>
+        </Typography>
         
         <div className="hidden items-center gap-2 lg:flex">
           <ul className="ml-10 hidden items-center gap-8 lg:flex">
-            {NAV_MENU.map(({ name, href }) => (
+            {NAV_MENU.map(({ name, icon: Icon, href }) => (
               <NavItem key={name} href={href}>
-                <p color="deep-purple" className="font-bold pr-5">
+                {/* <Icon className="h-5 w-5" color="deep-purple" /> */}
+                {/* @ts-ignore */}
+                <Typography color="deep-purple" className="font-bold pr-5">
                   {name}
-                </p>
+                </Typography>
               </NavItem>
             ))}
           </ul>
+          {/* <Button variant="text">Sign In</Button> */}
           <a href="#contact">
-            <button color="deep-purple" >Hire me</button>
+            {/* @ts-ignore */}
+            <Button color="deep-purple" >Hire me</Button>
           </a>
         </div>
         {/* @ts-ignore */}
@@ -97,15 +104,16 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            {/* <button variant="text">Sign In</button> */}
+            {/* <Button variant="text">Sign In</Button> */}
             <a href="https://www.material-tailwind.com/blocks">
               {/* @ts-ignore */}
-              <button color="deep-purple" >blocks</button>
+              <Button color="deep-purple" >blocks</Button>
             </a>
           </div>
         </div>
       </Collapse>
     </div>
+    </>
   );
 }
 

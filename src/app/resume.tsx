@@ -38,7 +38,7 @@ export function Resume() {
             experience in crafting visually stunning and impactful designs.
           </Typography>
           {/* @ts-ignore */}
-          <button
+          <Button
             variant="text"
             color="deep-purple"
             className="flex items-center gap-2"
@@ -49,7 +49,7 @@ export function Resume() {
               strokeWidth={3}
               className="h-3.5 w-3.5 text-deep-purple-500"
             />
-          </button>
+          </Button>
         </div>
         <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
           {RESUME_ITEMS.map((props, idx) => (

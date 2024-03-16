@@ -26,9 +26,9 @@ function Hero() {
           <div className="grid">
             <a href="#projects">
               {/* @ts-ignore */}
-              <button color="deep-purple" className="w-full px-4 md:w-[12rem]">
+              <Button color="deep-purple" className="w-full px-4 md:w-[12rem]">
                 See projects
-              </button>
+              </Button>
             </a>
           </div>
           {/* @ts-ignore */}
