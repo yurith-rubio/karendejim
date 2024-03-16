@@ -8,7 +8,7 @@ export function Testimonial() {
 
   return (
     <section className="py-12 px-8 lg:py-24">
-      <div className="container max-w-screen-lg mx-auto">
+      <div className="container lg:max-w-screen-lg mx-auto">
         {/* @ts-ignore */}
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row" >
           {/* @ts-ignore */}

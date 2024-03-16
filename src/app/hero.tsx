@@ -38,11 +38,11 @@ function Hero() {
           {/* @ts-ignore */}
         </div>
         <Image
-          width={1024}
-          height={1024}
+          width={517}
+          height={784}
           alt="team work"
-          src="/image/karen-delgado-picture.jpg"
-          className="h-[36rem] w-full rounded-xl object-cover"
+          src="/image/karen_portrait.jpg"
+          className="rounded-xl object-cover"
         />
       </div>
     </header>
