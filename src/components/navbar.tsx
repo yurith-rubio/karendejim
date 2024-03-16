@@ -33,7 +33,7 @@ export function Navbar() {
         </Typography>
         
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1">
+          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1" target="_blank">
             {/* @ts-ignore */}
             <Typography color="deep-purple" className="font-bold pr-5">
               Resume

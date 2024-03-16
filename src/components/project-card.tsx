@@ -4,11 +4,11 @@ import {
   CardHeader,
   CardBody,
   Typography,
-  Button,
   Dialog,
   DialogHeader,
   DialogBody,
 } from "@material-tailwind/react";
+import { Button } from "./button";
 import Image from "next/image";
 
 interface ProjectCardProps {
