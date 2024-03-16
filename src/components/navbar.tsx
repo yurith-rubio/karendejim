@@ -1,29 +1,14 @@
 import React from "react";
 import {
-  Navbar as MTNavbar,
   Collapse,
   Button,
   IconButton,
   Typography,
 } from "@material-tailwind/react";
 import {
-  CommandLineIcon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
-
-const NAV_MENU = [
-  {
-    name: "Resume",
-    icon: CommandLineIcon,
-    href: "https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1"
-  },
-];
-
-interface NavItemProps {
-  children: React.ReactNode;
-  href?: string;
-}
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
@@ -48,7 +33,7 @@ export function Navbar() {
         </Typography>
         
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1" target="_blank">
+          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1">
             {/* @ts-ignore */}
             <Typography color="deep-purple" className="font-bold pr-5">
               Resume
