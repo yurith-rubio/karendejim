@@ -183,9 +183,9 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
             {title}
         </Typography>
         {/* @ts-ignore */}
-        <Typography className="mb-6 font-normal !text-gray-500" >
+        {/* <Typography className="mb-6 font-normal !text-gray-500 summarize" >
           {desc}
-        </Typography>
+        </Typography> */}
         {/* @ts-ignore */}
         <Button onClick={handleOpen} color="deep-purple" >
           See poject
@@ -195,20 +195,17 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
       {/* @ts-ignore */}
       <Dialog open={open} handler={handleOpen} size="xxl">
         {/* @ts-ignore */}
-        <DialogHeader className="bg-gray-50 flex w-full fixed top-0 z-10">
+        <DialogHeader className="bg-gray-50 flex lg:max-w-screen-xl m-auto w-full fixed top-0 z-10 self-center">
           {/* @ts-ignore */}
-          <Button color="white" className="ml-auto" onClick={handleOpen} >
+          <button color="white" className="ml-auto close" onClick={handleOpen} >
             <img src="/icons/close.svg" className="w-8 h-8" alt="close icon" />
-          </Button>
+          </button>
         </DialogHeader>
         {/* @ts-ignore */}
         <DialogBody className="bg-gray-50 grid gap-9 p-8">
           {/* @ts-ignore */}
-          <Typography variant="h2" color="deep-purple" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
-            The key to more success is to have a lot of pillows. Put it this way,
-            it took me twenty five years to get these plants, twenty five years of
-            blood sweat and tears, and I&apos;m never giving up, I&apos;m just
-            getting started. I&apos;m up to something. Fan luv.
+          <Typography color="deep-purple" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
+            {desc}
           </Typography>
           
           

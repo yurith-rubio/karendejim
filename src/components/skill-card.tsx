@@ -15,7 +15,7 @@ export function SkillCard({ icon: icon, title, children }: SkillCardProps) {
       <CardBody className="grid justify-center text-center" >
         <img src={icon} alt={title} className="w-14 h-14 mb-4 m-auto" />
         {/* @ts-ignore */}
-        <Typography variant="h5" color="blue-gray" className="mb-2" >
+        <Typography color="blue-gray" className="mb-2 mt-3 font-normal !text-gray-500" >
           {title}
         </Typography>
       </CardBody>

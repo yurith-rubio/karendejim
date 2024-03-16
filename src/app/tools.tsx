@@ -59,7 +59,7 @@ export function Tools() {
     <section className="px-8" id="tools">
       <div className="container mx-auto mb-20 text-center">
         {/* @ts-ignore */}
-        <Typography variant="h1" color="deep-purple" className="mb-4" >
+        <Typography variant="h2" color="deep-purple" className="mb-4" >
           The tools I use
         </Typography>
       </div>

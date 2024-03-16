@@ -5,8 +5,11 @@
 html {
   scroll-behavior: smooth;
 }
-h1{
+h1, h2, .karen-nav{
   font-family: "Abril Fatface", serif !important;
+}
+body *:not(h1, h2, .karen-nav){
+  font-family: "Jost", sans-serif !important;
 }
 .pointer {
   cursor: pointer;
@@ -46,4 +49,14 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+button .close{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
 }

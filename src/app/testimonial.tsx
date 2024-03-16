@@ -16,7 +16,7 @@ export function Testimonial() {
             <div className="w-full mb-10 lg:mb-0">
               {/* @ts-ignore */}
               <Typography
-                variant="h3"
+                variant="h2"
                 color="deep-purple"
                 className="mb-4 font-bold lg:max-w-xs"
               >

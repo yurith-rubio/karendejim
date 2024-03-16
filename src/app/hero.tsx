@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Button, Typography } from "@material-tailwind/react";
+import {Typography } from "@material-tailwind/react";
+import Button from "@/components/button";
 
 function Hero() {
   return (
@@ -11,10 +12,10 @@ function Hero() {
           {/* @ts-ignore */}
           <Typography
             variant="h1"
-            color="blue-gray"
+            color="deep-purple"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
           >
-            Karen <span style={{fontWeight: 100}}>Delgado</span>
+            Karen Delgado
           </Typography>
           {/* @ts-ignore */}
           <Typography variant="h3" color="deep-purple" placeholder={undefined}>
@@ -30,7 +31,7 @@ function Hero() {
           <div className="grid">
             <a href="#projects">
               {/* @ts-ignore */}
-              <Button color="deep-purple" className="w-full px-4 md:w-[12rem]">
+              <Button>
                 See projects
               </Button>
             </a>
