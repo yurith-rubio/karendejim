@@ -32,3 +32,16 @@ html {
 .responsive-iframe * {
   margin: auto;
 }
+
+#Carousel button{
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+#Carousel button svg{
+  stroke: gray;
+}
+.container-video * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
