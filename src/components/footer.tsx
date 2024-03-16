@@ -30,8 +30,6 @@ export function Footer() {
                 </Typography>
               </li>
             ))}
-            {/* @ts-ignore */}
-            <Button color="deep-purple" >Hire me</Button>
           </ul>
         </div>
       </div>

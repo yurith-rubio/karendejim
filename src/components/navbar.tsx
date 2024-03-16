@@ -25,20 +25,6 @@ interface NavItemProps {
   href?: string;
 }
 
-function NavItem({ children, href }: NavItemProps) {
-  return (
-    <li>
-      <a
-        href={href || "#"}
-        color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
-      >
-        {children}
-      </a>
-    </li>
-  );
-}
-
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
 
@@ -62,18 +48,12 @@ export function Navbar() {
         </Typography>
         
         <div className="hidden items-center gap-2 lg:flex">
-          <ul className="ml-10 hidden items-center gap-8 lg:flex">
-            {NAV_MENU.map(({ name, icon: Icon, href }) => (
-              <NavItem key={name} href={href}>
-                {/* <Icon className="h-5 w-5" color="deep-purple" /> */}
-                {/* @ts-ignore */}
-                <Typography color="deep-purple" className="font-bold pr-5">
-                  {name}
-                </Typography>
-              </NavItem>
-            ))}
-          </ul>
-          {/* <Button variant="text">Sign In</Button> */}
+          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1" target="_blank">
+            {/* @ts-ignore */}
+            <Typography color="deep-purple" className="font-bold pr-5">
+              Resume
+            </Typography>
+          </a>
           <a href="#contact">
             {/* @ts-ignore */}
             <Button color="deep-purple" >Hire me</Button>
@@ -95,14 +75,12 @@ export function Navbar() {
       </div>
       <Collapse open={open}>
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
-          <ul className="flex flex-col gap-4">
-            {NAV_MENU.map(({ name, icon: Icon }) => (
-              <NavItem key={name}>
-                <Icon className="h-5 w-5" />
-                {name}
-              </NavItem>
-            ))}
-          </ul>
+          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1">
+            {/* @ts-ignore */}
+            <Typography color="deep-purple" className="font-bold pr-5">
+              Resume
+            </Typography>
+          </a>
           <div className="mt-6 mb-4 flex items-center gap-2">
             {/* <Button variant="text">Sign In</Button> */}
             <a href="https://www.material-tailwind.com/blocks">
