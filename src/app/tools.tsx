@@ -2,6 +2,7 @@
 
 import { Typography } from "@material-tailwind/react";
 import { SkillCard } from "@/components";
+import Htwo from "@/components/h2";
 
 const SKILLS = [
   {
@@ -58,10 +59,9 @@ export function Tools() {
   return (
     <section className="px-8" id="tools">
       <div className="container mx-auto mb-20 text-center">
-        {/* @ts-ignore */}
-        <Typography variant="h2" color="deep-purple" className="mb-4" >
+        <Htwo >
           The tools I use
-        </Typography>
+        </Htwo>
       </div>
       <div className="container mx-auto grid grid-cols-2 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((props, idx) => (

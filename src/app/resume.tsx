@@ -44,7 +44,7 @@ export function Resume() {
             experience in crafting visually stunning and impactful designs.
           </Typography>
           {/* @ts-ignore */}
-          <Button onClick={getResume}>
+          <Button onClick={getResume} btn="primary">
             Open Resume
             <ArrowRightIcon
               strokeWidth={3}

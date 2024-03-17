@@ -183,11 +183,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
             {title}
         </Typography>
         {/* @ts-ignore */}
-        {/* <Typography className="mb-6 font-normal !text-gray-500 summarize" >
-          {desc}
-        </Typography> */}
-        {/* @ts-ignore */}
-        <Button onClick={handleOpen} color="deep-purple" >
+        <Button onClick={handleOpen} btn="secondary" >
           See poject
         </Button>
       </CardBody>
@@ -204,7 +200,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         {/* @ts-ignore */}
         <DialogBody className="bg-gray-50 grid gap-9 p-8">
           {/* @ts-ignore */}
-          <Typography color="deep-purple" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
+          <Typography color="gray-500" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
             {desc}
           </Typography>
           

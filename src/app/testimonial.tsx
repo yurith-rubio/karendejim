@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
+import Htwo from "@/components/h2";
 
 export function Testimonial() {
   const [active, setActive] = React.useState(1);
@@ -15,13 +16,10 @@ export function Testimonial() {
           <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between " >
             <div className="w-full mb-10 lg:mb-0">
               {/* @ts-ignore */}
-              <Typography
-                variant="h2"
-                color="deep-purple"
-                className="mb-4 font-bold lg:max-w-xs"
+              <Htwo class="lg:max-w-xs"
               >
                 What my clients and managers say
-              </Typography>
+              </Htwo>
               {active === 1 && 
                 <>
                 {/* @ts-ignore */}

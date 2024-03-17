@@ -3,7 +3,7 @@ interface IH2{
     class?: string;
 }
 export function Htwo(props: IH2) {
-    return <h2 className="mb-2 pb-5 pt-10 text-deep-purple-500 abril-fatface text-4xl" >
+    return <h2 className={ `${props.class} mb-2 pb-5 pt-10 text-deep-purple-500 abril-fatface text-4xl` } >
         {props.children}
     </h2>
 }

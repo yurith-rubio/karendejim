@@ -2,6 +2,7 @@
 
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
+import Htwo from "@/components/h2";
 
 const PROJECTS = [
   {
@@ -64,9 +65,9 @@ export function Projects() {
     <section className="py-28 px-8" id="projects">
       <div className="container mx-auto mb-20 text-center">
         {/* @ts-ignore */}
-        <Typography variant="h2" color="deep-purple" className="mb-4" >
+        <Htwo >
           My static projects
-        </Typography>
+        </Htwo>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {PROJECTS.map((props, idx) => (

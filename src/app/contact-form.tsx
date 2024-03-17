@@ -28,7 +28,7 @@ export function ContactForm() {
               </Typography>
             </div>
             <div className="flex my-2 gap-5 justify-center">
-              <EnvelopeIcon className="h-6 w-6 text-blue-gray mt-5" />
+              <EnvelopeIcon className="h-6 w-6 text-blue-gray mt-1" />
               {/* @ts-ignore */}
               <Typography variant="h4" color="blue-gray" className="mb-2" >
                 karendejim@gmail.com
