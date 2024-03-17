@@ -12,6 +12,9 @@ const config: Config = withMT({
         'deep-purple': {
           500: "#611f69",
         },
+        'crema': {
+          500: "#fcbd8a",
+        },
       }
     }
   },

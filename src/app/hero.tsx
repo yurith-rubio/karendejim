@@ -15,7 +15,7 @@ function Hero() {
             Karen Delgado
           </h1>
           {/* @ts-ignore */}
-          <h2 className="block antialiased tracking-normal text-3xl leading-snug text-deep-purple-500 pb-3">
+          <h2 className="h2-hero block font-semibold antialiased tracking-normal text-3xl leading-snug text-gray-800 pb-3">
             I love to use the power of design to make an idea talk by itself.
           </h2>
           {/* @ts-ignore */}
@@ -35,13 +35,15 @@ function Hero() {
           </div>
           {/* @ts-ignore */}
         </div>
-        <Image
-          width={417}
-          height={632}
-          alt="team work"
-          src="/image/karen_portrait.jpg"
-          className="rounded-xl object-cover"
-        />
+        <div className="flex justify-center">
+          <Image
+            width={417}
+            height={632}
+            alt="team work"
+            src="/image/karen_portrait.jpg"
+            className="rounded-xl object-cover"
+          />
+        </div>
       </div>
     </header>
   );

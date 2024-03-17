@@ -52,22 +52,6 @@ export function Testimonial() {
                 </Typography>
                 </>
               }
-              {active === 3 &&
-                <>
-                {/* @ts-ignore */}
-                <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" >
-                  Christoph Augustin
-                  {/* @ts-ignore */}
-                  <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500" >
-                    Tax consultant
-                    <br />
-                    +49 172 4361973
-                    <br />
-                    christoph_augustin@t-online.de
-                  </Typography>
-                </Typography>
-                </>
-              }
               <div className="flex items-center gap-4">
                 {/* @ts-ignore */}
                 <Avatar
@@ -91,18 +75,6 @@ export function Testimonial() {
                     active === 2 ? "opacity-100" : "opacity-50"
                   }`}
                   onClick={() => setActive(2)}
-                />
-                <div className="w-[1px] h-[36px] bg-blue-gray-100" />
-                {/* @ts-ignore */}
-                <Avatar
-                  variant="rounded"
-                  src="/image/avatar3.jpg"
-                  alt="spotify"
-                  size="sm"
-                  className={`cursor-pointer ${
-                    active === 3 ? "opacity-100" : "opacity-50"
-                  }`}
-                  onClick={() => setActive(3)}
                 />
               </div>
             </div>

@@ -25,17 +25,17 @@ export function Navbar() {
   return (
     <>
     {/* @ts-ignore */}
-    <div className="block w-full max-w-screen rounded-xl py-4 px-8 shadow-md backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border-white/80 bg-white text-white border-0 sticky top-0 z-50" >
+    <div className="block w-full max-w-screen rounded-xl py-4 px-8 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border-white/80 bg-white text-white border-0 sticky top-0 z-50" >
       <div className="container mx-auto flex items-center justify-between">
         {/* @ts-ignore */}
-        <p className="karen-nav text-lg text-deep-purple-500" >
+        <p className="karen-nav text-xl text-deep-purple-500" >
           Karen Delgado
         </p>
         
         <div className="hidden items-center gap-2 lg:flex">
           <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1" target="_blank">
             {/* @ts-ignore */}
-            <Typography color="deep-purple" className="font-bold pr-5">
+            <Typography color="deep-purple" className="font-semibold pr-5">
               Resume
             </Typography>
           </a>

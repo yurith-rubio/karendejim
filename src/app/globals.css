@@ -50,6 +50,10 @@ body *:not(h1, h2, .karen-nav){
   justify-content: center;
   align-items: center;
 }
+.h2-hero{
+  border-top: 1px solid #fcbd8a;
+  padding-top: 20px;
+}
 button .close{
   width: 50px;
   height: 50px;
@@ -63,12 +67,12 @@ button .close{
 button.primary{
   background-color: #611f69;
   color: #fff;
-  border: 2px solid #611f69;
+  border: 1px solid #611f69;
 }
 button.primary:hover, button.secondary:hover{
   background-color: #7a2383;
   color: #fff;
-  border: 2px solid #7a2383;
+  border: 1px solid #7a2383;
 }
 button.secondary:hover .arrow{
   color: #fff;
@@ -76,5 +80,29 @@ button.secondary:hover .arrow{
 button.secondary{
   background-color: #fff;
   color: #611f69;
-  border: 2px solid #611f69;
+  border: 1px solid #fcbd8a;
+}
+.contact-wrapper{
+  border: 1px solid #fcbd8a;
+}
+.footer-line{
+  border-top: 1px solid #fcbd8a;
+}
+.transparent{
+  opacity: 0;
+}
+/* Animation up */
+.view {
+  animation: up 1s forwards;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 }
