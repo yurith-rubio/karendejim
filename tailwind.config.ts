@@ -15,6 +15,9 @@ const config: Config = withMT({
         'crema': {
           500: "#fcbd8a",
         },
+        'rosa': {
+          500: "#e77899",
+        }
       }
     }
   },

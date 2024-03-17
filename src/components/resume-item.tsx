@@ -10,8 +10,7 @@ export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
     <div className="flex items-start gap-4">
       {/* @ts-ignore */}
       <Card
-        color="deep-purple"
-        className="h-12 w-12 shrink-0 items-center justify-center !rounded-lg" >
+        className="shadow-none bg-white text-crema-500 shrink-0 items-center justify-center !rounded-lg" >
         <Icon className="h-6 w-6" strokeWidth={2} />
       </Card>
       {/* @ts-ignore */}
