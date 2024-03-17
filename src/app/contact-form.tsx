@@ -6,6 +6,7 @@ import {
   CardBody,
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import Htwo from "@/components/h2";
 
 export function ContactForm() {
   return (
@@ -16,9 +17,9 @@ export function ContactForm() {
           {/* @ts-ignore */}
           <CardBody className="col-span-3 rounded-lg h-full py-8 p-5 md:p-16 text-center" >
             {/* @ts-ignore */}
-            <Typography variant="h2" color="deep-purple" className="mb-2 pb-5 pt-10" >
+            <Htwo>
               Do not hesitate, and contact me
-            </Typography>
+            </Htwo>
             <div className="flex gap-5 justify-center">
               <PhoneIcon className="h-6 w-6 text-blue-gray mt-1" />
               {/* @ts-ignore */}

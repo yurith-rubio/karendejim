@@ -2,6 +2,7 @@
 
 import { Typography } from "@material-tailwind/react";
 import { Button } from '../components/button'
+import Htwo from "@/components/h2";
 
 import {
   ChartBarIcon,
@@ -34,10 +35,9 @@ export function Resume() {
     <section className="px-8 py-24">
       <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="col-span-1">
-          {/* @ts-ignore */}
-          <Typography variant="h2" color="deep-purple" >
+          <Htwo >
             Education
-          </Typography>
+          </Htwo>
           {/* @ts-ignore */}
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500" >
             Highly skilled and creative Graphic Designer with 5+ years of
