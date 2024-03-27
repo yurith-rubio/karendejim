@@ -27,7 +27,7 @@ const RESUME_ITEMS = [
 ];
 
 function getResume() {
-  return window.open("https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1", "_blank");
+  return window.open("https://drive.google.com/file/d/1AQKPrUFAzrfeqBFEPjgVb41rjMpFH5PJ/view?usp=sharing", "_blank");
 }
 
 export function Resume() {

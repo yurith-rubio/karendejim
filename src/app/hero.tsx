@@ -10,7 +10,7 @@ function Hero() {
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
           <h1
-            className="block antialiased tracking-normal text-deep-purple-500 mb-4 lg:text-6xl !leading-tight text-3xl mb-4 lg:text-6xl !leading-tight text-3xl"
+            className="block antialiased tracking-normal text-deep-purple-500 mb-4 lg:text-6xl !leading-tight text-5xl mb-4 lg:text-6xl !leading-tight text-3xl"
           >
             Karen Delgado
           </h1>

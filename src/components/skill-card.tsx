@@ -3,10 +3,9 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 interface SkillCardProps {
   title: string;
   icon: string;
-  children: React.ReactNode;
 }
 
-export function SkillCard({ icon: icon, title, children }: SkillCardProps) {
+export function SkillCard({ icon: icon, title }: SkillCardProps) {
   return (
     <>
     {/* @ts-ignore */}

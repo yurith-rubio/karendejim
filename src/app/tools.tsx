@@ -8,50 +8,38 @@ const SKILLS = [
   {
     icon: "/icons/illustrator.svg",
     title: "Adobe Illustrator",
-    children:
-      "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
   },
   {
     icon: "/icons/photoshop.svg",
     title: "Adobe Photoshop",
-    children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
   },
   {
     icon: "/icons/in-design.svg",
     title: "InDesign",
-    children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
   },
   {
     icon: "/icons/after-effects.svg",
     title: "Adobe After Effects",
-    children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
+  },
+  {
+    icon: "/icons/premiere.svg",
+    title: "Adobe Premiere",
   },
   {
     icon: "/icons/lightroom.svg",
     title: "Adobe Lightroom",
-    children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
   },
   {
     icon: "/icons/figma.svg",
     title: "Figma",
-    children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
   },
   {
     icon: "/icons/canva.svg",
     title: "Canva",
-    children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
   },
   {
     icon: "/icons/chatgpt.svg",
     title: "OpenAI",
-    children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
   },
 ];
 

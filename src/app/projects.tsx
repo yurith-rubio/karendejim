@@ -26,37 +26,37 @@ const PROJECTS = [
   {
     img: "/image/cover-Social-Media.jpg",
     title: "Social Media",
-    desc: "My time within marketing teams has been a masterclass in the pivotal role social channels play for any company. Crafting content for these platforms isn't just about aesthetics—it's about stepping into the shoes of the audience we aim to captivate. I've discovered that the same visual style doesn't always resonate across all companies and contexts. Here, I proudly present a diverse collection of social media pieces, each meticulously tailored to engage and inspire varied audiences.",
+    desc: `My time within marketing teams has been a masterclass in the pivotal role social channels play for any company. Crafting content for these platforms isn't just about aesthetics—it's about stepping into the shoes of the audience we aim to captivate. I've discovered that the same visual style doesn't always resonate across all companies and contexts. Here, I proudly present a diverse collection of social media pieces, each meticulously tailored to engage and inspire varied audiences.`,
   },
   {
     img: "/image/cover-Posters.png",
     title: "Design Posters",
-    desc: "",
+    desc: `This internal project was a thrilling opportunity to explore alternative ways of communicating the benefits of ITONICS Foresight product. Tasked with creating posters showcasing the advantages of various ITONICS products, I seized the chance to highlight the trend anticipation, emerging opportunity identification, and effective risk management features of the Foresight product. Taking a storytelling approach, I aimed to develop something original and extraordinary. The resulting posters were offered as free downloadable material for office decoration or unrestricted use.`,
   },
   {
     img: "/image/cover-Illustrations.png",
     title: "Set of Illustrations for ITONICS",
-    desc: "",
+    desc: `These illustrations serve as visual representations of ITONICS' array of software products. Combining software screenshots with vectorial shapes, they exude a dynamic and attention-grabbing aesthetic. Positioned as the hero section on each product page of the website, they provided an engaging introduction to each software offering.`,
   },
   {
     img: "/image/cover-Brochure.jpg",
     title: "Presentation - Brochure Design",
-    desc: "",
+    desc: ``,
   },
   {
     img: "/image/cover-Catalogue.png",
     title: "Catalogue Design",
-    desc: "",
+    desc: ``,
   },
   {
     img: "/image/cover-Premio.png",
-    title: "9° Design Price MARION HERNANDEZ",
-    desc: "",
+    title: "9° Design Price MARIO HERNANDEZ",
+    desc: ``,
   },
   {
     img: "/image/cover-Traveling.png",
     title: "Traveling guide 'Viajes con estilo'",
-    desc: "",
+    desc: ``,
   },
 ];
 
@@ -64,9 +64,8 @@ export function Projects() {
   return (
     <section className="py-28 px-8" id="projects">
       <div className="container mx-auto mb-20 text-center">
-        {/* @ts-ignore */}
         <Htwo >
-          My static projects
+          My projects
         </Htwo>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">

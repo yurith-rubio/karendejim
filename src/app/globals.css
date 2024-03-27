@@ -51,7 +51,6 @@ body *:not(h1, h2, .karen-nav){
   align-items: center;
 }
 .h2-hero{
-  border-top: 1px solid #fcbd8a;
   padding-top: 20px;
 }
 button .close{

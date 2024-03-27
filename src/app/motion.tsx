@@ -1,23 +1,26 @@
 "use client";
 
 import { Carousel } from "@material-tailwind/react";
+import Htwo from "@/components/h2";
 
 export function Motion() {
     return <>
+        <Htwo class="mt-20 text-center" >
+          Video and motion animation
+        </Htwo>
         {/* @ts-ignore */}
         <Carousel className="w-4/6 m-auto" id="Carousel">
             <div className="container-video">
-                <iframe className="responsive-iframe" width="auto" height="500"
+                <iframe className="responsive-iframe" width="800" height="auto"
                 src="https://www-ccv.adobe.io/v1/player/ccv/QwevyqvTxuy/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
                 </iframe> 
             </div>
             <div className="container-video">
-                <iframe className="responsive-iframe" width="auto" height="500"
-                src="https://cdn.myportfolio.com/b57c2722-2985-4260-9e1c-785fd5d931c3/1eded75e-b6fd-43cc-80bf-da2b89e3a3f4_rw_1200.gif?h=70427dfa038ef5b0e4c1130a352b4ae4">
+                <iframe className="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/meFoprLdx54?si=9UAutJTf_d0xOV87" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                 </iframe> 
             </div>
             <div className="container-video">
-                <iframe className="responsive-iframe" width="auto" height="500"
+                <iframe className="responsive-iframe" width="800" height="auto"
                 src="https://www-ccv.adobe.io/v1/player/ccv/UztmyZbWX2T/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
                 </iframe> 
             </div>

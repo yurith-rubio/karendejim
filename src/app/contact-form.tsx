@@ -10,7 +10,7 @@ import Htwo from "@/components/h2";
 
 export function ContactForm() {
   return (
-    <section className="px-8 py-16" id="contact">
+    <section className="px-8 py-16 lg:h-screen flex justify-center items-center" id="contact">
       <div>
         {/* @ts-ignore */}
         <Card shadow={false} className="container mx-auto contact-wrapper" >
@@ -24,7 +24,7 @@ export function ContactForm() {
               <PhoneIcon className="h-6 w-6 text-crema-500 mt-1" />
               {/* @ts-ignore */}
               <Typography color="blue-gray" className="mb-2 text-lg" >
-                +1(49) 160 6013 255
+                +(49) 160 6013 255
               </Typography>
             </div>
             <div className="flex my-2 gap-5 justify-center">

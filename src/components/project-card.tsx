@@ -140,7 +140,7 @@ const IMAGES: any = {
     "/project-images/Catalogue-3.jpg",
     "/project-images/Catalogue-4.jpg",
   ],
-  "9° Design Price MARION HERNANDEZ": [
+  "9° Design Price MARIO HERNANDEZ": [
     "/project-images/Premio-1.png",
     "/project-images/Premio-2.jpg",
     "/project-images/Premio-3.jpg",
@@ -184,7 +184,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         </Typography>
         {/* @ts-ignore */}
         <Button onClick={handleOpen} btn="secondary" >
-          See poject
+          See project
         </Button>
       </CardBody>
       

@@ -33,7 +33,7 @@ export function Navbar() {
         </p>
         
         <div className="hidden items-center gap-2 lg:flex">
-          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1" target="_blank">
+          <a href="https://drive.google.com/file/d/1AQKPrUFAzrfeqBFEPjgVb41rjMpFH5PJ/view?usp=sharing" target="_blank">
             {/* @ts-ignore */}
             <Typography className="text-rosa-500 font-semibold pr-5">
               Resume
@@ -41,7 +41,7 @@ export function Navbar() {
           </a>
           <a href="#contact">
             {/* @ts-ignore */}
-            <Button btn="primary" >Hire me</Button>
+            <Button btn="primary" >Contact me</Button>
           </a>
         </div>
         {/* @ts-ignore */}
@@ -60,7 +60,7 @@ export function Navbar() {
       </div>
       <Collapse open={open}>
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
-          <a href="https://drive.google.com/file/d/19i_d8gHl8hO_nIoPkFo7eGVkIPFRe17i/view?pli=1">
+          <a href="https://drive.google.com/file/d/1AQKPrUFAzrfeqBFEPjgVb41rjMpFH5PJ/view?usp=sharing">
             {/* @ts-ignore */}
             <Typography color="deep-purple" className="font-bold pr-5">
               Resume
