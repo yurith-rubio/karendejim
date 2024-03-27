@@ -6,6 +6,7 @@ import Htwo from "@/components/h2";
 
 export function Testimonial() {
   const [active, setActive] = React.useState(1);
+  let activeTestimonial = active - 1;
 
   const testimonials = [
     {
@@ -30,6 +31,44 @@ export function Testimonial() {
       email: "sophia.huebner@itonics.de",
     },
   ]
+
+  // const selectedTestimonial = testimonials.forEach((testimonial) => {
+  //     if (active === 1) {
+  //         <div>
+  //             <p className="font-normal mb-5 !text-gray-500 text-xl">
+  //               {testimonial.text}
+  //             </p>
+  //             <h3 className="text-2xl mb-0.5 text-blue-gray" >
+  //               {testimonial.name}
+  //             </h3>
+  //             <p className="font-normal mb-5 !text-gray-500"  >
+  //               {testimonial.position}
+  //               <br />
+  //               {testimonial.phone}
+  //               <br />
+  //               {testimonial.email}
+  //             </p>
+  //         </div>
+  //     }
+  //   })
+
+  
+  const selectedTestimonial = `<div>
+              <p className="font-normal mb-5 !text-gray-500 text-xl">
+                ${testimonials[0].text}
+              </p>
+              <h3 className="text-2xl mb-0.5 text-blue-gray" >
+                {testimonial.name}
+              </h3>
+              <p className="font-normal mb-5 !text-gray-500"  >
+                {testimonial.position}
+                <br />
+                {testimonial.phone}
+                <br />
+                {testimonial.email}
+              </p>
+          </div>`
+    
   return (
     <section className="py-12 px-8 lg:py-24">
       <div className="container lg:max-w-screen-lg mx-auto">
@@ -81,38 +120,24 @@ export function Testimonial() {
                   onClick={() => setActive(3)}
                 />
               </div>
-
-              {
-                testimonials.map((testimonial, key) => {
-                  console.log(key + 1)
-                  key = key + 1;
-                  if (active === key) {
-                    return <>
-                    <div key={key} className="">
-                      <p className="font-normal mb-5 !text-gray-500 text-xl">
-                        {testimonial.text}
-                      </p>
-                      {/* @ts-ignore */}
-                      <Typography variant="h3" color="blue-gray" className="text-2xl mb-0.5" >
-                        {testimonial.name}
-                      </Typography>
-                      {/* @ts-ignore */}
-                      <Typography variant="paragraph" className="font-normal mb-5 !text-gray-500"  >
-                        {testimonial.position}
-                        <br />
-                        {testimonial.phone}
-                        <br />
-                        {testimonial.email}
-                      </Typography>
-                    </div>
-                    </>
-                  }
-                })
-              }
-
+              <div>
+                <p className="font-normal mb-5 !text-gray-500 text-xl">
+                  {testimonials[activeTestimonial].text}
+                </p>
+                <h3 className="text-2xl mb-0.5 text-blue-gray" >
+                  {testimonials[activeTestimonial].name}
+                </h3>
+                <p className="font-normal mb-5 !text-gray-500"  >
+                  {testimonials[activeTestimonial].position}
+                  <br />
+                  {testimonials[activeTestimonial].phone}
+                  <br />
+                  {testimonials[activeTestimonial].email}
+                </p>
+              </div>
               
             </div>
-            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 m-auto">
+            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 relative top-36">
               <img
                 width={768}
                 height={768}

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import Button from "@/components/button";
 
 function Hero() {
@@ -42,6 +42,7 @@ function Hero() {
             alt="team work"
             src="/image/karen_portrait.jpg"
             className="rounded-xl object-cover"
+            loading = 'eager'
           />
         </div>
       </div>

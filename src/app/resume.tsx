@@ -9,19 +9,23 @@ import {
   PuzzlePieceIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
+import MasterIcon from "/public/icons/master-integrated-design.svg";
+import BachelorIcon from "/public/icons/bachelor-graphic-design.svg";
+import VideoIcon from "/public/icons/video-multimedia.svg";
+
 import { ResumeItem } from "../components";
 
 const RESUME_ITEMS = [
   {
-    icon: PuzzlePieceIcon,
+    icon: MasterIcon,
     children: "Master in Integrated Design",
   },
   {
-    icon: ChartBarIcon,
+    icon: BachelorIcon,
     children: "Bachelor of Graphic Design",
   },
   {
-    icon: PuzzlePieceIcon,
+    icon: VideoIcon,
     children: "Video & Multimedia Technology Degree",
   },
 ];

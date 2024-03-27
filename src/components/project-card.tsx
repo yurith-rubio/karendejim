@@ -208,7 +208,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         {/* @ts-ignore */}
         <DialogBody className="bg-gray-50 grid gap-9 p-8">
           {/* @ts-ignore */}
-          <Typography color="gray-500" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
+          <Typography color="blue-gray" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
             {desc}
           </Typography>
           

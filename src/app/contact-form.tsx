@@ -18,7 +18,7 @@ export function ContactForm() {
           <CardBody className="col-span-3 rounded-lg h-full py-8 p-5 md:p-16 text-center" >
             {/* @ts-ignore */}
             <Htwo>
-              Do not hesitate, and contact me
+              Contact me
             </Htwo>
             <div className="flex gap-5 justify-center">
               <PhoneIcon className="h-6 w-6 text-crema-500 mt-1" />

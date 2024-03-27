@@ -94,7 +94,9 @@ button.secondary{
 .view {
   animation: up 1s forwards;
 }
-
+.shrinkToFit{
+  margin: auto;
+}
 @keyframes up {
   0% {
     opacity: 0;

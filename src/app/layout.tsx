@@ -1,14 +1,8 @@
 /* eslint-disable @next/next/next-script-for-ga */
+import "./reset.css"
 import "./globals.css";
 import type { Metadata } from "next";
-// import { Abril_Fatface } from "next/font/google";
 import { Layout } from "@/components";
-
-// const abril_fatface = Abril_Fatface({
-//   subsets: ["latin"],
-//   weight: ["400"],
-//   display: "swap",
-// });
 
 export const metadata: Metadata = {
   title: "Karen Delgado - Portfolio",
@@ -24,11 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          defer
-          data-site="YOUR_DOMAIN_HERE"
-          src="https://api.nepcha.com/js/nepcha-analytics.js"
-        ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
