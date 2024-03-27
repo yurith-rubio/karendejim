@@ -3,6 +3,7 @@
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
 import Htwo from "@/components/h2";
+import { title } from "process";
 
 const PROJECTS = [
   {
@@ -58,6 +59,11 @@ const PROJECTS = [
     title: "Traveling guide 'Viajes con estilo'",
     desc: ``,
   },
+  {
+    img: "/image/cover-Guia.jpg",
+    title: "Turistic guide of the center in Bogota",
+    desc: ``,
+  }
 ];
 
 export function Projects() {

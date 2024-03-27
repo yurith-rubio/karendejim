@@ -154,7 +154,15 @@ const IMAGES: any = {
     "/project-images/Traveling-4.jpg",
     "/project-images/Traveling-5.jpg",
     "/project-images/Traveling-6.jpg",
-  ]
+  ],
+  "Turistic guide of the center in Bogota": [
+    "/project-images/Guia-1.jpg",
+    "/project-images/Guia-2.jpg",
+    "/project-images/Guia-3.jpg",
+    "/project-images/Guia-4.jpg",
+    "/project-images/Guia-5.jpg",
+    "/project-images/Guia-6.jpg",
+  ],
 };
 
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {
