@@ -75,7 +75,7 @@ export function Testimonial() {
         {/* @ts-ignore */}
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row" >
           {/* @ts-ignore */}
-          <CardBody className="w-full lg:gap-10 h-full lg:!flex justify-between " >
+          <CardBody className="p-0 lg:p-6 w-full lg:gap-10 h-full lg:!flex justify-between " >
             <div className="w-full mb-10 lg:mb-0">
               {/* @ts-ignore */}
               <Htwo class="lg:max-w-xs"
@@ -137,7 +137,7 @@ export function Testimonial() {
               </div>
               
             </div>
-            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 relative top-36">
+            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 relative lg:top-36 hidden md:block">
               <img
                 width={768}
                 height={768}

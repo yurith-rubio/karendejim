@@ -26,6 +26,9 @@ export default function RootLayout({
       </head>
       <body>
         <Layout>
+          <div id="spinner" className="container">
+            <div className="loading"></div>
+          </div>
           {children}
         </Layout>
       </body>

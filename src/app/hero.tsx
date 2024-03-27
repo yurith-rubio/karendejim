@@ -6,7 +6,7 @@ import Button from "@/components/button";
 
 function Hero() {
   return (
-    <header className="bg-white p-8">
+    <header id="top" className="bg-white p-8">
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
           <h1
@@ -16,7 +16,7 @@ function Hero() {
           </h1>
           {/* @ts-ignore */}
           <h2 className="h2-hero block font-semibold antialiased tracking-normal text-3xl leading-snug text-gray-800 pb-3">
-            I love to use the power of design to make an idea talk by itself.
+            I love to use the power of design to make <br></br> an idea talk by itself.
           </h2>
           {/* @ts-ignore */}
           <Typography

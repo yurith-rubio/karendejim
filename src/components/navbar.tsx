@@ -28,10 +28,11 @@ export function Navbar() {
     <div className="block w-full max-w-screen rounded-xl py-4 px-8 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border-white/80 bg-white text-white border-0 sticky top-0 z-50" >
       <div className="container mx-auto flex items-center justify-between">
         {/* @ts-ignore */}
-        <p className="karen-nav text-xl text-deep-purple-500" >
+          
+        <a href="#top" className="karen-nav text-xl text-deep-purple-500">
           Karen Delgado
-        </p>
-        
+        </a>
+      
         <div className="hidden items-center gap-2 lg:flex">
           <a href="https://drive.google.com/file/d/1AQKPrUFAzrfeqBFEPjgVb41rjMpFH5PJ/view?usp=sharing" target="_blank">
             {/* @ts-ignore */}
@@ -67,9 +68,9 @@ export function Navbar() {
             </Typography>
           </a>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <a href="https://www.material-tailwind.com/blocks">
+            <a href="#contact">
               {/* @ts-ignore */}
-              <Button color="deep-purple" >blocks</Button>
+              <Button btn="primary" >Contact me</Button>
             </a>
           </div>
         </div>
