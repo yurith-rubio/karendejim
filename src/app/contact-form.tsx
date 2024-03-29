@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Htwo from "@/components/h2";
+import Image from "next/image";
 
 export function ContactForm() {
   return (
@@ -38,7 +39,7 @@ export function ContactForm() {
               {/* @ts-ignore */}
               <Typography variant="h4" color="blue-gray" className="mb-2" >
                 <a href="https://www.linkedin.com/in/karen-delgado-513852133">
-                  <img src="/logos/linkedin.svg" alt="linkedin logo" width={100} />
+                  <Image src="/logos/linkedin.svg" alt="linkedin logo" width={100} height={24} />
                 </a>
               </Typography>
             </div>            

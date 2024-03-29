@@ -3,6 +3,7 @@
 import React from "react";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 import Htwo from "@/components/h2";
+import Image from "next/image";
 
 export function Testimonial() {
   const [active, setActive] = React.useState(1);
@@ -138,7 +139,7 @@ export function Testimonial() {
               
             </div>
             <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 relative lg:top-36 hidden md:block">
-              <img
+              <Image
                 width={768}
                 height={768}
                 alt="testimonial image"

@@ -14,7 +14,7 @@ export function Modal({ params }: { params: { projectId: any } }){
             <div className="flex justify-center">
               <div className="bg-gray-50 flex lg:max-w-screen-xl m-auto w-full fixed top-0 z-10 self-center">
                 <Link href="/#projects" className="ml-auto close"  >
-                  <img src="/icons/close.svg" className="w-8 h-8" alt="close icon" />
+                  <Image src="/icons/close.svg" className="w-8 h-8" alt="close icon" width={30} height={30} />
                 </Link>
               </div>
 

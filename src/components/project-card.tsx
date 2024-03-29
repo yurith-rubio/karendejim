@@ -29,7 +29,7 @@ export function ProjectCard({ cover, title }: ProjectCardProps) {
       {/* @ts-ignore */}
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48" >
         <Link href={`/projects/${title_link}`}>
-          <img
+          <Image
             src={cover}
             alt={title}
             width={768}
@@ -51,50 +51,6 @@ export function ProjectCard({ cover, title }: ProjectCardProps) {
             </Button>
           </Link>
         </CardBody>
-        
-      {/*
-      
-
-      <Dialog open={open} handler={handleOpen} size="xxl">
-       
-        <DialogHeader className="bg-gray-50 flex lg:max-w-screen-xl m-auto w-full fixed top-0 z-10 self-center">
-
-          <button color="white" className="ml-auto close" onClick={handleOpen} >
-            <img src="/icons/close.svg" className="w-8 h-8" alt="close icon" />
-          </button>
-        </DialogHeader>
-
-        <DialogBody className="bg-gray-50 grid gap-9 p-8">
-          
-          <Typography color="blue-gray" className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
-            {desc}
-          </Typography>
-          
-          <Suspense fallback={<Loading/>}>
-          {IMAGES[title] &&
-                IMAGES[title].map((url: string, key: number) => (
-                  <div key={key}>
-                    <a href={url} >
-                    <Image
-                      src={url}
-                      alt={title}
-                      width={768}
-                      height={768}
-                      className="object-cover rounded-xl mr-auto ml-auto"
-                      />
-                    </a>
-                  </div>
-              ))
-            }
-            </Suspense>
-          </DialogBody>
-        </Dialog>
-
-      */}
-
-        
-
-
       </Card>
     </>
   );

@@ -1,4 +1,5 @@
 import { Card, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 
 interface ResumeItemProps {
   icon: { src: string };
@@ -12,7 +13,7 @@ export function ResumeItem({ icon: icon, children }: ResumeItemProps) {
       <Card
         className="shadow-none bg-white text-crema-500 shrink-0 items-center justify-center !rounded-lg" >
         {/* <Icon className="h-6 w-6" strokeWidth={2} /> */}
-        <img src={icon.src} width={30} height="auto" />
+        <Image src={icon.src} width={30} height={30} alt={icon.src} />
       </Card>
       {/* @ts-ignore */}
       <Typography className="w-full font-normal !text-gray-500" >
