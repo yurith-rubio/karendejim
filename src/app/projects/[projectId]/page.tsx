@@ -4,7 +4,7 @@ import PROJECTS from "@/lib/projects";
 import Image from "next/image";
 import Link from "next/link";
 
-export function Modal({ params }: { params: { projectId: any } }){
+export default function Page({ params }: { params: { projectId: any } }){
     const slug = params.projectId;
     const selectedProject = PROJECTS.find((project) => project.slug === slug);
 
@@ -44,5 +44,3 @@ export function Modal({ params }: { params: { projectId: any } }){
       );
     }
 }
-
-export default Modal;

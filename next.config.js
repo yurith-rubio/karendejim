@@ -7,10 +7,7 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-  },
-  experimental: {
-    scrollRestoration: true,
-  },
+  }
 };
 
 module.exports = nextConfig;
