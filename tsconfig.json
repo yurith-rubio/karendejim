@@ -31,10 +31,10 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
+    ".next/types/**/*.ts",
+    "src/app/projects/[projectId]/page.js"
+,   "src/app/projects/[projectId]/loading.js"  ],
   "exclude": [
     "node_modules"
   ]

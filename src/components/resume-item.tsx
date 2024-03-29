@@ -5,10 +5,7 @@ interface ResumeItemProps {
   children: React.ReactNode;
 }
 
-
-
 export function ResumeItem({ icon: icon, children }: ResumeItemProps) {
-  console.log(icon.src)
   return (
     <div className="flex items-start gap-4">
       {/* @ts-ignore */}
