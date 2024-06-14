@@ -1,10 +1,9 @@
 "use client";
 
-import React, { Suspense } from "react";
-import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
+import React from "react";
+import { Card, CardBody, Avatar } from "@material-tailwind/react";
 import Htwo from "@/components/h2";
 import Image from "next/image";
-import Loading from "./loading";
 
 export function Testimonial() {
   const [active, setActive] = React.useState(1);
@@ -33,43 +32,6 @@ export function Testimonial() {
       email: "sophia.huebner@itonics.de",
     },
   ]
-
-  // const selectedTestimonial = testimonials.forEach((testimonial) => {
-  //     if (active === 1) {
-  //         <div>
-  //             <p className="font-normal mb-5 !text-gray-500 text-xl">
-  //               {testimonial.text}
-  //             </p>
-  //             <h3 className="text-2xl mb-0.5 text-blue-gray" >
-  //               {testimonial.name}
-  //             </h3>
-  //             <p className="font-normal mb-5 !text-gray-500"  >
-  //               {testimonial.position}
-  //               <br />
-  //               {testimonial.phone}
-  //               <br />
-  //               {testimonial.email}
-  //             </p>
-  //         </div>
-  //     }
-  //   })
-
-  
-  const selectedTestimonial = `<div>
-              <p className="font-normal mb-5 !text-gray-500 text-xl">
-                ${testimonials[0].text}
-              </p>
-              <h3 className="text-2xl mb-0.5 text-blue-gray" >
-                {testimonial.name}
-              </h3>
-              <p className="font-normal mb-5 !text-gray-500"  >
-                {testimonial.position}
-                <br />
-                {testimonial.phone}
-                <br />
-                {testimonial.email}
-              </p>
-          </div>`
     
   return (
     <section className="py-12 px-8 lg:py-24">
@@ -138,17 +100,15 @@ export function Testimonial() {
                 </p>
               </div>
             </div>
-            <Suspense fallback={<Loading />}>
-              <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 relative lg:top-36 hidden md:block">
-                <Image
-                  width={768}
-                  height={768}
-                  alt="testimonial image"
-                  src={`/image/avatar${active}.jpg`}
-                  className="h-full rounded-lg w-full object-cover"
-                />
-              </div>
-            </Suspense>
+            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0 relative lg:top-36 hidden md:block">
+              <Image
+                width={768}
+                height={768}
+                alt="testimonial image"
+                src={`/image/avatar${active}.jpg`}
+                className="h-full rounded-lg w-full object-cover"
+              />
+            </div>
           </CardBody>
         </Card>
       </div>
