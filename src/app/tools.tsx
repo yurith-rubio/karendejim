@@ -41,6 +41,10 @@ const SKILLS = [
     icon: "/icons/chatgpt.svg",
     title: "OpenAI",
   },
+  {
+    icon: "/icons/3d-max.svg",
+    title: "3D Max",
+  }
 ];
 
 export function Tools() {
@@ -51,7 +55,7 @@ export function Tools() {
           The tools I use
         </Htwo>
       </div>
-      <div className="container mx-auto grid grid-cols-2 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-2 gap-y-10 md:grid-cols-3 lg:grid-cols-5">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

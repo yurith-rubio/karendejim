@@ -25,6 +25,11 @@ export function Motion() {
                 src="https://www-ccv.adobe.io/v1/player/ccv/UztmyZbWX2T/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
                 </iframe> 
             </div>
+            <div className="container-video">
+                <iframe className="responsive-iframe" width="800" height="auto"
+                src="/videos/animation.mp4">
+                </iframe> 
+            </div>
         </Carousel>
     </>
 }
