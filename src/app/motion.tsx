@@ -26,9 +26,9 @@ export function Motion() {
                 </iframe> 
             </div>
             <div className="container-video">
-                <iframe className="responsive-iframe" width="800" height="auto"
-                src="/videos/animation.mp4">
-                </iframe> 
+                <video className="responsive-iframe" width="800" height="auto" controls>
+                    <source src="/videos/animation.mp4" type="video/mp4"></source>
+                </video> 
             </div>
         </Carousel>
     </>
