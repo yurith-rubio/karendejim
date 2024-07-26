@@ -208,6 +208,24 @@ const PROJECTS = [
       "/project-images/Guia-6.jpg",
     ],
   },
+  {
+    slug: "web-mockups",
+    title: "Web-Mockups",
+    cover: "/image/cover-Mockups.jpg",
+    images: [
+      "/project-images/Mockups-1.jpg",
+      "/project-images/Mockups-2.jpg",
+      "/project-images/Mockups-3.jpg",
+      "/project-images/Mockups-4.jpg",
+      "/project-images/Mockups-5.jpg",
+      "/project-images/Mockups-6.jpg",
+      "/project-images/Mockups-7.jpg",
+      "/project-images/Mockups-8.jpg",
+      "/project-images/Mockups-9.jpg",
+      "/project-images/Mockups-10.jpg",
+    ],
+    description: "These high-fidelity mockups, created in Figma, visualize the various features of the Innovation Management Software product by ITONICS. By incorporating a human touch, they aim to depict the interaction and usability of these products for teams across diverse industries.",
+  }
 ];
-  
+
 export default PROJECTS;

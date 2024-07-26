@@ -6,7 +6,6 @@ import Htwo from "@/components/h2";
 import { title } from "process";
 import PROJECTS from "@/lib/projects";
 
-
 export function Projects() {
   return (
     <section className="py-28 px-8" id="projects">
@@ -21,6 +20,7 @@ export function Projects() {
         ))}
       </div>
     </section>
+    
   );
 }
 
