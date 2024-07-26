@@ -28,7 +28,7 @@ function Hero() {
           <div className="grid">
             <a href="#projects">
               {/* @ts-ignore */}
-              <Button btn="primary">
+              <Button btn="primary hero-project">
                 See projects
               </Button>
             </a>
