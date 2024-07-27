@@ -140,10 +140,8 @@ button.secondary{
     transform: rotate(360deg);
   }
 }
-
 Button.hero-project {
   margin-top: 20px;
-  letter-spacing: 3px;
 }
 
 
