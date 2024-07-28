@@ -22,9 +22,8 @@ export default function Page({ params }: { params: { projectId: any } }){
                 {/* @ts-ignore */}
                 <p className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16" >
                       { selectedProject.description && selectedProject.description }
-                  </p>  
-                {
-                  selectedProject.images.map((url: string, key: number) => (
+                </p>
+                { selectedProject.images.map((url: string, key: number) => (
                     <div key={key}>
                       <a href={url} >
                         <Image
@@ -38,6 +37,13 @@ export default function Page({ params }: { params: { projectId: any } }){
                     </div>
                   ))
                 }
+              { selectedProject.title === "Set of Illustrations for ITONICS" && 
+                <div className="container-video">
+                <iframe className="responsive-iframe" width="800" height="auto"
+                src="https://www-ccv.adobe.io/v1/player/ccv/4JNRCBVou5I/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
+                </iframe> 
+                </div>
+              }
                 </div>
             </div>
         </>
