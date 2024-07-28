@@ -5,7 +5,7 @@ const PROJECTS = [
     cover: "/image/cover-Illustrations.png",
     images: [
       "/project-images/Illustrations-1.png",
-      "/project-images/Illustrations-2.gif",
+      "https://drive.google.com/file/d/1eUhsdc0r7osCP7TVosm6T3YZ8TM1JPd3/view?usp=drive_link",
       "/project-images/Illustrations-3.png",
       "/project-images/Illustrations-4.png",
       "/project-images/Illustrations-5.png",
