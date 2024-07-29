@@ -143,8 +143,15 @@ button.secondary{
 Button.hero-project {
   margin-top: 20px;
 }
+.projects-container .content{
+  max-width: 1200px;
+  width: 100%;
+}
 
-
+.image-project{
+  max-width: 1200px;
+  width: max-content;
+}
 
 
 @keyframes up {
