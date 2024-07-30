@@ -18,8 +18,16 @@ body *:not(h1, h2, .karen-nav){
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%; /*16:9 Aspect Ratio */
   margin-top: 100px;
+}
+.container-video-project {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */

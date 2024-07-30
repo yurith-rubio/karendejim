@@ -29,7 +29,8 @@ const PROJECTS = [
       "/project-images/Mockups-9.jpg",
       "/project-images/Mockups-10.jpg",
     ],
-    description: "These high-fidelity mockups, created in Figma, visualize the various features of the Innovation Management Software product by ITONICS. By incorporating a human touch, they aim to depict the interaction and usability of these products for teams across diverse industries.",
+    description:
+      "These high-fidelity mockups, created in Figma, visualize the various features of the Innovation Management Software product by ITONICS. By incorporating a human touch, they aim to depict the interaction and usability of these products for teams across diverse industries.",
   },
   {
     slug: "social-media",
@@ -58,10 +59,10 @@ const PROJECTS = [
     title: "Mastering Sustainability in Printing",
     cover: "/image/cover-Thesis_Sustainability.png",
     images: [
-      "/project-images/Thesis_Sustainability_1.png",
+      "/project-images/Thesis_Sustainability_1.jpg",
       "/project-images/Thesis_Sustainability_2.jpg",
       "/project-images/Thesis_Sustainability_3.png",
-      "/project-images/Thesis_Sustainability_4.png",
+      // "/project-images/Thesis_Sustainability_4.png",
       "/project-images/Thesis_Sustainability_5.png",
       "/project-images/Thesis_Sustainability_6.png",
       "/project-images/Thesis_Sustainability_7.png",
@@ -141,7 +142,8 @@ const PROJECTS = [
       "/project-images/Surrealistic-35.jpg",
       "/project-images/Surrealistic-36.jpg",
     ],
-    description: "Embark on a journey of surreal creativity! From 2020 to 2023, I curated an enchanting collection of surreal collages for ITONICS' Blog channel, exploring innovation management, foresight, and strategy. These captivating visuals not only enhanced the channel's appeal but also became intrinsic to the company's identity. With remarkable engagement rates, they have evolved beyond their initial role, sought after by both external clients and internal stakeholders for various platforms and initiatives. Discover how these timeless creations continue to influence narratives and ignite imaginations today.",
+    description:
+      "Embark on a journey of surreal creativity! From 2020 to 2023, I curated an enchanting collection of surreal collages for ITONICS' Blog channel, exploring innovation management, foresight, and strategy. These captivating visuals not only enhanced the channel's appeal but also became intrinsic to the company's identity. With remarkable engagement rates, they have evolved beyond their initial role, sought after by both external clients and internal stakeholders for various platforms and initiatives. Discover how these timeless creations continue to influence narratives and ignite imaginations today.",
   },
   {
     slug: "insurance-trend-report",
@@ -183,7 +185,8 @@ const PROJECTS = [
       "/project-images/Sustainability-10.jpg",
       "/project-images/Sustainability-11.jpg",
     ],
-    description: "January 2020 marked the start of the Decade of Action, a pivotal time for environmentalists, aligned with the UN 2030 Agenda for Sustainable Development. This report, the second installment of the Trend report series by ITONICS, underscores the urgency of innovative solutions amid climate change. Carefully curated images in this report center on activism and critique of the man-made climate crisis, maintaining aesthetic appeal. Informative infographics and clear text hierarchies prioritize key information.",
+    description:
+      "January 2020 marked the start of the Decade of Action, a pivotal time for environmentalists, aligned with the UN 2030 Agenda for Sustainable Development. This report, the second installment of the Trend report series by ITONICS, underscores the urgency of innovative solutions amid climate change. Carefully curated images in this report center on activism and critique of the man-made climate crisis, maintaining aesthetic appeal. Informative infographics and clear text hierarchies prioritize key information.",
   },
   {
     slug: "catalogue-design",
@@ -238,10 +241,7 @@ const PROJECTS = [
     slug: "design-posters",
     title: "Design Posters",
     cover: "/image/cover-Posters.png",
-    images: [
-      "/project-images/Posters-1.jpg",
-      "/project-images/Posters-2.jpg",
-    ],
+    images: ["/project-images/Posters-1.jpg", "/project-images/Posters-2.jpg"],
     description: `This internal project was a thrilling opportunity to explore alternative ways of communicating the benefits of ITONICS Foresight product. Tasked with creating posters showcasing the advantages of various ITONICS products, I seized the chance to highlight the trend anticipation, emerging opportunity identification, and effective risk management features of the Foresight product. Taking a storytelling approach, I aimed to develop something original and extraordinary. The resulting posters were offered as free downloadable material for office decoration or unrestricted use.`,
   },
 ];
