@@ -45,10 +45,16 @@ body *:not(h1, h2, .karen-nav){
 #Carousel button svg{
   stroke: gray;
 }
-.container-video * {
+.container-video *, .thesis_link {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.thesis_link{
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+  color: #7a2383;
 }
 .h2-hero{
   padding-top: 20px;
@@ -146,13 +152,15 @@ Button.hero-project {
 .projects-container .content{
   max-width: 1200px;
   width: 100%;
+  padding-bottom: 150px;
 }
 
-.image-project{
-  max-width: 1200px;
-  width: max-content;
+@media screen and (min-width: 1200px){
+  .image-project{
+    max-width: 1200px;
+    width: max-content;
+  }
 }
-
 
 @keyframes up {
   0% {

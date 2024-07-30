@@ -3,6 +3,7 @@
 import PROJECTS from "@/lib/projects";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/button";
 
 export default function Page({ params }: { params: { projectId: any } }){
     const slug = params.projectId;
@@ -39,9 +40,25 @@ export default function Page({ params }: { params: { projectId: any } }){
                 }
               { selectedProject.title === "Set of Illustrations for ITONICS" && 
                 <div className="container-video">
-                <iframe className="responsive-iframe" width="800" height="auto"
-                src="https://www-ccv.adobe.io/v1/player/ccv/4JNRCBVou5I/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
-                </iframe> 
+                  <iframe className="responsive-iframe" width="800" height="auto"
+                  src="https://www-ccv.adobe.io/v1/player/ccv/4JNRCBVou5I/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View">
+                  </iframe> 
+                </div>
+              }
+              {
+                selectedProject.title === "Mastering Sustainability in Printing" &&
+                <div>
+                  <div className="container-video">
+                    <iframe className="responsive-iframe" width="800" height="auto"
+                    src="https://drive.google.com/file/d/1d5G2MrD_aTJAP6Ul3CppSNHTdUWuJHPw/view">
+                    </iframe>
+                  </div>
+                  <div className="container-video">
+                    <iframe className="responsive-iframe" width="800" height="auto"
+                    src="https://drive.google.com/file/d/1pIEWjmDc62MgV12IDQ33PJv-tVzzzgBB/view?usp=drive_link">
+                    </iframe> 
+                  </div>
+                  <a href=" https://drive.google.com/file/d/1bOgcabmoHXlP07NPugR2RQd1waPv79iN/view?usp=drive_link" target="_blank" className="thesis_link"><Button btn="primary">Open full thesis in here</Button></a>
                 </div>
               }
                 </div>
