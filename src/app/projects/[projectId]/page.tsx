@@ -30,19 +30,39 @@ export default function Page({ params }: { params: { projectId: any } }){
               <p className="text-xl mb-4 max-w-3xl mr-auto ml-auto pt-16">
                 {selectedProject.description && selectedProject.description}
               </p>
-              {selectedProject.images.map((url: string, key: number) => (
-                <div key={key}>
-                  <a href={url}>
-                    <Image
-                      src={url}
-                      alt={url}
-                      width={768}
-                      height={768}
-                      className="image-project object-cover rounded-xl mr-auto ml-auto"
-                    />
-                  </a>
-                </div>
-              ))}
+              {selectedProject.images.map((url: string, key: number) => {
+                if (url.endsWith(".jpg") || url.endsWith(".png")) {
+                  return (
+                    <div key={key}>
+                      <a href={url}>
+                        <Image
+                          src={url}
+                          alt={url}
+                          width={768}
+                          height={768}
+                          className={`image-project object-cover rounded-xl mr-auto ml-auto ${selectedProject.slug}`}
+                        />
+                      </a>
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div className="container-video-project">
+                      <iframe
+                        className="iframe-video"
+                        width="560"
+                        height="315"
+                        src={url}
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  );
+                }
+              })}
               {selectedProject.title === "Set of Illustrations for ITONICS" && (
                 <div className="container-video">
                   <iframe
@@ -56,36 +76,12 @@ export default function Page({ params }: { params: { projectId: any } }){
               {selectedProject.title ===
                 "Mastering Sustainability in Printing" && (
                 <div>
-                  <div className="container-video-project">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/b_cX501Mcn8?si=UFPiPw_LqgW6lXEJ"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                  <div className="container-video-project">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/GRKlekz9D2o?si=cggJwpUFPjm2ECcU"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
                   <a
                     href=" https://drive.google.com/file/d/1bOgcabmoHXlP07NPugR2RQd1waPv79iN/view?usp=drive_link"
                     target="_blank"
                     className="thesis_link"
                   >
-                    <Button btn="primary">Open full thesis in here</Button>
+                    Click here if you want to see the complete project
                   </a>
                 </div>
               )}

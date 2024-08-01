@@ -162,11 +162,22 @@ Button.hero-project {
   width: 100%;
   padding-bottom: 150px;
 }
-
 @media screen and (min-width: 1200px){
   .image-project{
     max-width: 1200px;
     width: max-content;
+  }
+}
+@media screen and (min-width: 900px){
+  .iframe-video{
+    width: 840px;
+    height: 472.5px;
+  }
+}
+@media screen and (max-width: 500px){
+  .iframe-video{
+    width: 330px;
+    height: 185.625px;
   }
 }
 
