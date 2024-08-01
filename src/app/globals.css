@@ -176,7 +176,7 @@ Button.hero-project {
 }
 @media screen and (max-width: 500px){
   .iframe-video{
-    width: 330px;
+    max-width: 330px;
     height: 185.625px;
   }
 }

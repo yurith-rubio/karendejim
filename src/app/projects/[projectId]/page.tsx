@@ -3,7 +3,6 @@
 import PROJECTS from "@/lib/projects";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/button";
 
 export default function Page({ params }: { params: { projectId: any } }){
     const slug = params.projectId;
