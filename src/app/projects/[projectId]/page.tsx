@@ -30,37 +30,6 @@ export default function Page({ params }: { params: { projectId: any } }){
                 {selectedProject.description && selectedProject.description}
               </p>
               {selectedProject.images.map((url: string, key: number) => {
-                if (url.endsWith(".jpg") || url.endsWith(".png")) {
-                  return (
-                    <div key={key}>
-                      <a href={url}>
-                        <Image
-                          src={url}
-                          alt={url}
-                          width={768}
-                          height={768}
-                          className={`image-project object-cover rounded-xl mr-auto ml-auto ${selectedProject.slug}`}
-                        />
-                      </a>
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div className="container-video-project">
-                      <iframe
-                        className="iframe-video"
-                        width="560"
-                        height="315"
-                        src={url}
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  );
-                }
               })}
               {selectedProject.title === "Set of Illustrations for ITONICS" && (
                 <div className="container-video">
