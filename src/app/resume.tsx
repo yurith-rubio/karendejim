@@ -31,7 +31,10 @@ const RESUME_ITEMS = [
 ];
 
 function getResume() {
-  return window.open("https://drive.google.com/file/d/1AQKPrUFAzrfeqBFEPjgVb41rjMpFH5PJ/view?usp=sharing", "_blank");
+  return window.open(
+    "https://drive.google.com/open?id=1AQKPrUFAzrfeqBFEPjgVb41rjMpFH5PJ&usp=drive_fs",
+    "_blank"
+  );
 }
 
 export function Resume() {
